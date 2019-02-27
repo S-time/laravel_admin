@@ -26,25 +26,6 @@ npm run prod 生产环境打包
 
 本项目未经严格测试，可能存在bug，仅供参考学习。
 
-## 预览
-
-![QQ截图20190104154750.png](https://upload-images.jianshu.io/upload_images/5993750-efa7105bce3ea3f1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-
-![QQ截图20190104154810.png](https://upload-images.jianshu.io/upload_images/5993750-095b4f98baf3d11b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-
-![QQ截图20190104155016.png](https://upload-images.jianshu.io/upload_images/5993750-9a5d47e2d84bb313.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-
-![QQ截图20190104155059.png](https://upload-images.jianshu.io/upload_images/5993750-0b96487364dbf9b6.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-
-![QQ截图20190104155120.png](https://upload-images.jianshu.io/upload_images/5993750-247128ce5cbac950.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-
-![QQ截图20190104155131.png](https://upload-images.jianshu.io/upload_images/5993750-2174a73a34d9369e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-
-![QQ截图20190104155147.png](https://upload-images.jianshu.io/upload_images/5993750-c283087e7b373240.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-
-![QQ截图20190104155155.png](https://upload-images.jianshu.io/upload_images/5993750-b279a7962aa2189e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-
-![QQ截图20190104155205.png](https://upload-images.jianshu.io/upload_images/5993750-8f3c23466cb2bc91.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 
 ## License
