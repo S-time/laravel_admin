@@ -24,5 +24,11 @@ export default [
         name: 'logslist',
         path: '/system/logs',
         component: resolve => void(require(['../views/system/logs.vue'], resolve))
+    },
+    {
+        name: 'consumer',
+        path: '/system/consumer',
+        component: resolve => void(require(['../views/system/consumer.vue'], resolve))
     }
+
 ]

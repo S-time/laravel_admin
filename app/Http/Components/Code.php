@@ -25,6 +25,12 @@ class Code
     const OLD_PASSWORD_WRONG = 1004;
     const LOGIN_TRY_ERROR = 1005;
 
+    const MOBILE_EXIST = 1006;
+    const MOBILE_CODE = 1007;
+    const MOBILE_CODE_TRY_ERROR = 1008;
+    const PWD_ERROR = 1009;
+    const USER_ERROR = 1010;
+
     public static $message = [
         self::SUCCESS => '成功',
         self::FAIL => '失败',
@@ -38,7 +44,15 @@ class Code
         self::OLD_PASSWORD_WRONG => '原密码错误',
         self::LOGIN_ERROR => '用户名或密码错误！',
         self::LOGIN_TRY_ERROR => '输错密码次数太多，请一小时后再试！',
-        self::NO_PERMISSION => '没有%s的接口权限，请联系管理员！'
+        self::NO_PERMISSION => '没有%s的接口权限，请联系管理员！',
+
+        self::MOBILE_EXIST=>'输入正确手机号',
+        self::MOBILE_CODE=>'验证码错误',
+        self::MOBILE_CODE_TRY_ERROR=>'输错验证码次数太多,请重新获取！',
+        self::PWD_ERROR => '输入密码！',
+
+        self::USER_ERROR => '用户名错误！',
+
     ];
 
     public static function getError($code)

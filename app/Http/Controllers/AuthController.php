@@ -48,6 +48,16 @@ class AuthController extends Controller
         return false;
     }
 
+    public function canTel()
+    {
+        $path = dirname($this->request->getPathInfo()) . '/tel';
+        if(Common::checkPermission($path)) {
+            return true;
+        }
+
+        return false;
+    }
+
     public function canDelete()
     {
         $path = dirname($this->request->getPathInfo()) . '/delete';

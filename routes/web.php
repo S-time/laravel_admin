@@ -23,6 +23,23 @@ route::namespace('Auth')->group(function () {
 
 //api
 Route::prefix('/api/')->group(function () {
+    //
+    route::prefix('home/')->namespace('Home')->group(function () {
+        //登录注册
+        Route::get('user/getCode', 'HomeController@getCode');
+        Route::get('user/register', 'HomeController@register');
+        Route::get('user/logout', 'HomeController@logout');
+
+        //修改信息
+        Route::get('user/bindEmail', 'AdminController@bindEmail');
+        Route::post('user/unbindEmail', 'AdminController@unbindEmail');
+        Route::post('user/avatar/upload', 'AdminController@uploadAvatar');
+        Route::post('user/avatar/save', 'AdminController@saveAvatar');
+        Route::get('user/profile/get', 'AdminController@getProfile');
+        Route::post('user/password/change', 'AdminController@changePassword');
+    });
+
+
 
     Route::get('test', 'IndexController@test');
 
@@ -58,6 +75,9 @@ Route::prefix('/api/')->group(function () {
         Route::post('admin/avatar/save', 'AdminController@saveAvatar');
         Route::get('admin/profile/get', 'AdminController@getProfile');
         Route::post('admin/password/change', 'AdminController@changePassword');
+
+        Route::get('consumer/list', 'ConsumerController@getList');
+        Route::post('consumer/tel', 'ConsumerController@tel');
     });
 
 });

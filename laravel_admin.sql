@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50719
 File Encoding         : 65001
 
-Date: 2019-02-27 20:36:35
+Date: 2019-03-02 00:00:59
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -33,7 +33,7 @@ CREATE TABLE `yy_admin_log` (
   PRIMARY KEY (`id`),
   KEY `func` (`func`),
   KEY `admin_id` (`admin_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=745 DEFAULT CHARSET=utf8mb4 COMMENT='运营后台操作日志记录表';
+) ENGINE=InnoDB AUTO_INCREMENT=1187 DEFAULT CHARSET=utf8mb4 COMMENT='运营后台操作日志记录表';
 
 -- ----------------------------
 -- Records of yy_admin_log
@@ -782,6 +782,448 @@ INSERT INTO `yy_admin_log` VALUES ('741', '1', 'god', '127.0.0.1', '/api/system/
 INSERT INTO `yy_admin_log` VALUES ('742', '1', 'god', '127.0.0.1', '/api/system/rule/list', '/api/system/rule/list?menu=1&status=1', '', '{\"menu\":\"1\",\"status\":\"1\"}', '1', '1551197440.652');
 INSERT INTO `yy_admin_log` VALUES ('743', '1', 'god', '127.0.0.1', '/api/system/rule/list', '/api/system/rule/list', '', '[]', '1', '1551197440.667');
 INSERT INTO `yy_admin_log` VALUES ('744', '1', 'god', '127.0.0.1', '/api/system/rule/get', '/api/system/rule/get?id=25', '', '{\"id\":\"25\"}', '1', '1551197446.290');
+INSERT INTO `yy_admin_log` VALUES ('745', '1', 'god', '127.0.0.1', '/api/get/path/info', '/api/get/path/info', '', '{\"path\":\"\\/\"}', '1', '1551273389.785');
+INSERT INTO `yy_admin_log` VALUES ('746', '1', 'god', '127.0.0.1', '/api/get/path/info', '/api/get/path/info', '', '{\"path\":\"\\/system\\/admin\"}', '1', '1551275420.186');
+INSERT INTO `yy_admin_log` VALUES ('747', '1', 'god', '127.0.0.1', '/api/system/admin/list', '/api/system/admin/list?page=1&pageSize=20', '', '{\"page\":\"1\",\"pageSize\":\"20\"}', '1', '1551275420.186');
+INSERT INTO `yy_admin_log` VALUES ('748', '1', 'god', '127.0.0.1', '/api/system/group/list', '/api/system/group/list?status=1', '', '{\"status\":\"1\"}', '1', '1551275420.206');
+INSERT INTO `yy_admin_log` VALUES ('749', '1', 'god', '127.0.0.1', '/api/system/admin/list', '/api/system/admin/list?page=1&pageSize=20', '', '{\"page\":\"1\",\"pageSize\":\"20\"}', '1', '1551276789.896');
+INSERT INTO `yy_admin_log` VALUES ('750', '1', 'god', '127.0.0.1', '/api/system/admin/list', '/api/system/admin/list?page=1&pageSize=20&id=1', '', '{\"page\":\"1\",\"pageSize\":\"20\",\"id\":\"1\"}', '1', '1551276798.496');
+INSERT INTO `yy_admin_log` VALUES ('751', '1', 'god', '127.0.0.1', '/api/system/admin/list', '/api/system/admin/list?page=1&pageSize=20&id=1', '', '{\"page\":\"1\",\"pageSize\":\"20\",\"id\":\"1\"}', '1', '1551277424.323');
+INSERT INTO `yy_admin_log` VALUES ('752', '1', 'god', '127.0.0.1', '/api/get/path/info', '/api/get/path/info', '', '{\"path\":\"\\/system\\/21-5\"}', '1', '1551277583.008');
+INSERT INTO `yy_admin_log` VALUES ('753', '1', 'god', '127.0.0.1', '/api/get/path/info', '/api/get/path/info', '', '{\"path\":\"\\/system\\/rule\"}', '1', '1551277583.026');
+INSERT INTO `yy_admin_log` VALUES ('754', '1', 'god', '127.0.0.1', '/api/system/rule/list', '/api/system/rule/list?menu=1&status=1', '', '{\"menu\":\"1\",\"status\":\"1\"}', '1', '1551277583.081');
+INSERT INTO `yy_admin_log` VALUES ('755', '1', 'god', '127.0.0.1', '/api/system/rule/list', '/api/system/rule/list', '', '[]', '1', '1551277583.087');
+INSERT INTO `yy_admin_log` VALUES ('756', '1', 'god', '127.0.0.1', '/api/system/rule/routes', '/api/system/rule/routes', '', '[]', '1', '1551277583.090');
+INSERT INTO `yy_admin_log` VALUES ('757', '1', 'god', '127.0.0.1', '/api/system/rule/save', '/api/system/rule/save', '', '{\"title\":\"\\u5ba2\\u6237\\u516c\\u6d77\",\"name\":\"\\/consumer\",\"status\":true,\"menu\":\"1\",\"pid\":34,\"sort\":\"1\"}', '1', '1551277672.374');
+INSERT INTO `yy_admin_log` VALUES ('758', '1', 'god', '127.0.0.1', '/api/system/rule/list', '/api/system/rule/list', '', '[]', '1', '1551277672.498');
+INSERT INTO `yy_admin_log` VALUES ('759', '1', 'god', '127.0.0.1', '/api/system/rule/list', '/api/system/rule/list?menu=1&status=1', '', '{\"menu\":\"1\",\"status\":\"1\"}', '1', '1551277672.501');
+INSERT INTO `yy_admin_log` VALUES ('760', '1', 'god', '127.0.0.1', '/api/get/path/info', '/api/get/path/info', '', '{\"path\":\"\\/system\\/21-4\"}', '1', '1551277685.400');
+INSERT INTO `yy_admin_log` VALUES ('761', '1', 'god', '127.0.0.1', '/api/get/path/info', '/api/get/path/info', '', '{\"path\":\"\\/system\\/group\"}', '1', '1551277685.443');
+INSERT INTO `yy_admin_log` VALUES ('762', '1', 'god', '127.0.0.1', '/api/system/group/list', '/api/system/group/list', '', '[]', '1', '1551277685.450');
+INSERT INTO `yy_admin_log` VALUES ('763', '1', 'god', '127.0.0.1', '/api/system/rule/list', '/api/system/rule/list?status=1', '', '{\"status\":\"1\"}', '1', '1551277685.462');
+INSERT INTO `yy_admin_log` VALUES ('764', '1', 'god', '127.0.0.1', '/api/get/path/info', '/api/get/path/info', '', '{\"path\":\"\\/system\\/rule\"}', '1', '1551277685.816');
+INSERT INTO `yy_admin_log` VALUES ('765', '1', 'god', '127.0.0.1', '/api/system/rule/list', '/api/system/rule/list', '', '[]', '1', '1551277685.818');
+INSERT INTO `yy_admin_log` VALUES ('766', '1', 'god', '127.0.0.1', '/api/system/rule/routes', '/api/system/rule/routes', '', '[]', '1', '1551277685.821');
+INSERT INTO `yy_admin_log` VALUES ('767', '1', 'god', '127.0.0.1', '/api/system/rule/list', '/api/system/rule/list?menu=1&status=1', '', '{\"menu\":\"1\",\"status\":\"1\"}', '1', '1551277685.831');
+INSERT INTO `yy_admin_log` VALUES ('768', '1', 'god', '127.0.0.1', '/api/system/rule/save', '/api/system/rule/save', '', '{\"title\":\"\\u5ba2\\u6237\\u5217\\u8868\",\"name\":\"\\/consumer\\/list\",\"status\":true,\"menu\":\"0\",\"pid\":35}', '1', '1551277754.690');
+INSERT INTO `yy_admin_log` VALUES ('769', '1', 'god', '127.0.0.1', '/api/system/rule/list', '/api/system/rule/list', '', '[]', '1', '1551277754.812');
+INSERT INTO `yy_admin_log` VALUES ('770', '1', 'god', '127.0.0.1', '/api/system/rule/list', '/api/system/rule/list?menu=1&status=1', '', '{\"menu\":\"1\",\"status\":\"1\"}', '1', '1551277754.813');
+INSERT INTO `yy_admin_log` VALUES ('771', '1', 'god', '127.0.0.1', '/api/system/rule/get', '/api/system/rule/get?id=14', '', '{\"id\":\"14\"}', '1', '1551277768.571');
+INSERT INTO `yy_admin_log` VALUES ('772', '1', 'god', '127.0.0.1', '/api/system/rule/get', '/api/system/rule/get?id=36', '', '{\"id\":\"36\"}', '1', '1551277780.704');
+INSERT INTO `yy_admin_log` VALUES ('773', '1', 'god', '127.0.0.1', '/api/system/rule/save', '/api/system/rule/save', '', '{\"id\":36,\"name\":\"api\\/system\\/consumer\\/list\",\"title\":\"\\u5ba2\\u6237\\u5217\\u8868\",\"type\":1,\"status\":true,\"menu\":\"0\",\"condition\":null,\"pid\":35,\"remark\":null,\"icon\":null,\"sort\":null,\"deleted\":0}', '1', '1551277789.270');
+INSERT INTO `yy_admin_log` VALUES ('774', '1', 'god', '127.0.0.1', '/api/system/rule/list', '/api/system/rule/list?menu=1&status=1', '', '{\"menu\":\"1\",\"status\":\"1\"}', '1', '1551277789.418');
+INSERT INTO `yy_admin_log` VALUES ('775', '1', 'god', '127.0.0.1', '/api/system/rule/list', '/api/system/rule/list', '', '[]', '1', '1551277789.421');
+INSERT INTO `yy_admin_log` VALUES ('776', '1', 'god', '127.0.0.1', '/api/get/path/info', '/api/get/path/info', '', '{\"path\":\"\\/system\\/rule\"}', '1', '1551277811.764');
+INSERT INTO `yy_admin_log` VALUES ('777', '1', 'god', '127.0.0.1', '/api/system/rule/routes', '/api/system/rule/routes', '', '[]', '1', '1551277811.774');
+INSERT INTO `yy_admin_log` VALUES ('778', '1', 'god', '127.0.0.1', '/api/system/rule/list', '/api/system/rule/list?menu=1&status=1', '', '{\"menu\":\"1\",\"status\":\"1\"}', '1', '1551277811.814');
+INSERT INTO `yy_admin_log` VALUES ('779', '1', 'god', '127.0.0.1', '/api/system/rule/list', '/api/system/rule/list', '', '[]', '1', '1551277811.817');
+INSERT INTO `yy_admin_log` VALUES ('780', '1', 'god', '127.0.0.1', '/api/get/path/info', '/api/get/path/info', '', '{\"path\":\"\\/consumer\"}', '1', '1551277816.739');
+INSERT INTO `yy_admin_log` VALUES ('781', '1', 'god', '127.0.0.1', '/api/get/path/info', '/api/get/path/info', '', '{\"path\":\"\\/consumer\"}', '1', '1551277828.245');
+INSERT INTO `yy_admin_log` VALUES ('782', '1', 'god', '127.0.0.1', '/api/get/path/info', '/api/get/path/info', '', '{\"path\":\"\\/system\\/rule\"}', '1', '1551277872.709');
+INSERT INTO `yy_admin_log` VALUES ('783', '1', 'god', '127.0.0.1', '/api/system/rule/routes', '/api/system/rule/routes', '', '[]', '1', '1551277872.709');
+INSERT INTO `yy_admin_log` VALUES ('784', '1', 'god', '127.0.0.1', '/api/system/rule/list', '/api/system/rule/list', '', '[]', '1', '1551277872.714');
+INSERT INTO `yy_admin_log` VALUES ('785', '1', 'god', '127.0.0.1', '/api/system/rule/list', '/api/system/rule/list?menu=1&status=1', '', '{\"menu\":\"1\",\"status\":\"1\"}', '1', '1551277872.725');
+INSERT INTO `yy_admin_log` VALUES ('786', '1', 'god', '127.0.0.1', '/api/system/rule/get', '/api/system/rule/get?id=36', '', '{\"id\":\"36\"}', '1', '1551278030.127');
+INSERT INTO `yy_admin_log` VALUES ('787', '1', 'god', '127.0.0.1', '/api/system/rule/save', '/api/system/rule/save', '', '{\"id\":36,\"name\":\"\\/api\\/system\\/consumer\\/list\",\"title\":\"\\u5ba2\\u6237\\u5217\\u8868\",\"type\":1,\"status\":true,\"menu\":\"0\",\"condition\":null,\"pid\":35,\"remark\":null,\"icon\":null,\"sort\":null,\"deleted\":0}', '1', '1551278051.821');
+INSERT INTO `yy_admin_log` VALUES ('788', '1', 'god', '127.0.0.1', '/api/system/rule/list', '/api/system/rule/list', '', '[]', '1', '1551278051.941');
+INSERT INTO `yy_admin_log` VALUES ('789', '1', 'god', '127.0.0.1', '/api/system/rule/list', '/api/system/rule/list?menu=1&status=1', '', '{\"menu\":\"1\",\"status\":\"1\"}', '1', '1551278051.976');
+INSERT INTO `yy_admin_log` VALUES ('790', '1', 'god', '127.0.0.1', '/api/system/rule/get', '/api/system/rule/get?id=14', '', '{\"id\":\"14\"}', '1', '1551278059.460');
+INSERT INTO `yy_admin_log` VALUES ('791', '1', 'god', '127.0.0.1', '/api/system/rule/get', '/api/system/rule/get?id=14', '', '{\"id\":\"14\"}', '1', '1551278065.721');
+INSERT INTO `yy_admin_log` VALUES ('792', '1', 'god', '127.0.0.1', '/api/system/rule/get', '/api/system/rule/get?id=6', '', '{\"id\":\"6\"}', '1', '1551278071.448');
+INSERT INTO `yy_admin_log` VALUES ('793', '1', 'god', '127.0.0.1', '/api/system/rule/get', '/api/system/rule/get?id=14', '', '{\"id\":\"14\"}', '1', '1551278076.450');
+INSERT INTO `yy_admin_log` VALUES ('794', '1', 'god', '127.0.0.1', '/api/system/rule/get', '/api/system/rule/get?id=36', '', '{\"id\":\"36\"}', '1', '1551278088.340');
+INSERT INTO `yy_admin_log` VALUES ('795', '1', 'god', '127.0.0.1', '/api/system/rule/save', '/api/system/rule/save', '', '{\"id\":36,\"name\":\"api\\/system\\/consumer\\/list\",\"title\":\"\\u5ba2\\u6237\\u5217\\u8868\",\"type\":1,\"status\":true,\"menu\":\"0\",\"condition\":null,\"pid\":35,\"remark\":null,\"icon\":null,\"sort\":null,\"deleted\":0}', '1', '1551278094.173');
+INSERT INTO `yy_admin_log` VALUES ('796', '1', 'god', '127.0.0.1', '/api/system/rule/list', '/api/system/rule/list', '', '[]', '1', '1551278094.326');
+INSERT INTO `yy_admin_log` VALUES ('797', '1', 'god', '127.0.0.1', '/api/system/rule/list', '/api/system/rule/list?menu=1&status=1', '', '{\"menu\":\"1\",\"status\":\"1\"}', '1', '1551278094.329');
+INSERT INTO `yy_admin_log` VALUES ('798', '1', 'god', '127.0.0.1', '/api/get/path/info', '/api/get/path/info', '', '{\"path\":\"\\/consumer\"}', '1', '1551278104.235');
+INSERT INTO `yy_admin_log` VALUES ('799', '1', 'god', '127.0.0.1', '/api/get/path/info', '/api/get/path/info', '', '{\"path\":\"\\/consumer\"}', '1', '1551278191.847');
+INSERT INTO `yy_admin_log` VALUES ('800', '1', 'god', '127.0.0.1', '/api/get/path/info', '/api/get/path/info', '', '{\"path\":\"\\/system\\/profile\"}', '1', '1551278230.732');
+INSERT INTO `yy_admin_log` VALUES ('801', '1', 'god', '127.0.0.1', '/api/system/admin/profile/get', '/api/system/admin/profile/get', '', '[]', '1', '1551278230.756');
+INSERT INTO `yy_admin_log` VALUES ('802', '1', 'god', '127.0.0.1', '/api/get/path/info', '/api/get/path/info', '', '{\"path\":\"\\/consumer\"}', '1', '1551278236.619');
+INSERT INTO `yy_admin_log` VALUES ('803', '1', 'god', '127.0.0.1', '/api/get/path/info', '/api/get/path/info', '', '{\"path\":\"\\/21-5\"}', '1', '1551278261.259');
+INSERT INTO `yy_admin_log` VALUES ('804', '1', 'god', '127.0.0.1', '/api/get/path/info', '/api/get/path/info', '', '{\"path\":\"\\/system\\/rule\"}', '1', '1551278261.322');
+INSERT INTO `yy_admin_log` VALUES ('805', '1', 'god', '127.0.0.1', '/api/system/rule/list', '/api/system/rule/list?menu=1&status=1', '', '{\"menu\":\"1\",\"status\":\"1\"}', '1', '1551278261.394');
+INSERT INTO `yy_admin_log` VALUES ('806', '1', 'god', '127.0.0.1', '/api/get/path/info', '/api/get/path/info', '', '{\"path\":\"\\/system\\/rule\"}', '1', '1551278268.924');
+INSERT INTO `yy_admin_log` VALUES ('807', '1', 'god', '127.0.0.1', '/api/system/rule/list', '/api/system/rule/list?menu=1&status=1', '', '{\"menu\":\"1\",\"status\":\"1\"}', '1', '1551278268.934');
+INSERT INTO `yy_admin_log` VALUES ('808', '1', 'god', '127.0.0.1', '/api/system/rule/list', '/api/system/rule/list', '', '[]', '1', '1551278268.931');
+INSERT INTO `yy_admin_log` VALUES ('809', '1', 'god', '127.0.0.1', '/api/system/rule/routes', '/api/system/rule/routes', '', '[]', '1', '1551278268.933');
+INSERT INTO `yy_admin_log` VALUES ('810', '1', 'god', '127.0.0.1', '/api/system/rule/get', '/api/system/rule/get?id=2', '', '{\"id\":\"2\"}', '1', '1551278277.034');
+INSERT INTO `yy_admin_log` VALUES ('811', '1', 'god', '127.0.0.1', '/api/system/rule/get', '/api/system/rule/get?id=3', '', '{\"id\":\"3\"}', '1', '1551278281.034');
+INSERT INTO `yy_admin_log` VALUES ('812', '1', 'god', '127.0.0.1', '/api/system/rule/get', '/api/system/rule/get?id=4', '', '{\"id\":\"4\"}', '1', '1551278283.978');
+INSERT INTO `yy_admin_log` VALUES ('813', '1', 'god', '127.0.0.1', '/api/system/rule/get', '/api/system/rule/get?id=5', '', '{\"id\":\"5\"}', '1', '1551278286.196');
+INSERT INTO `yy_admin_log` VALUES ('814', '1', 'god', '127.0.0.1', '/api/system/rule/get', '/api/system/rule/get?id=9', '', '{\"id\":\"9\"}', '1', '1551278297.614');
+INSERT INTO `yy_admin_log` VALUES ('815', '1', 'god', '127.0.0.1', '/api/system/rule/get', '/api/system/rule/get?id=35', '', '{\"id\":\"35\"}', '1', '1551278306.621');
+INSERT INTO `yy_admin_log` VALUES ('816', '1', 'god', '127.0.0.1', '/api/system/rule/save', '/api/system/rule/save', '', '{\"id\":35,\"name\":\"\\/system\\/consumer\",\"title\":\"\\u5ba2\\u6237\\u516c\\u6d77\",\"type\":1,\"status\":true,\"menu\":\"1\",\"condition\":null,\"pid\":34,\"remark\":null,\"icon\":null,\"sort\":1,\"deleted\":0}', '1', '1551278313.705');
+INSERT INTO `yy_admin_log` VALUES ('817', '1', 'god', '127.0.0.1', '/api/system/rule/list', '/api/system/rule/list', '', '[]', '1', '1551278313.840');
+INSERT INTO `yy_admin_log` VALUES ('818', '1', 'god', '127.0.0.1', '/api/system/rule/list', '/api/system/rule/list?menu=1&status=1', '', '{\"menu\":\"1\",\"status\":\"1\"}', '1', '1551278313.836');
+INSERT INTO `yy_admin_log` VALUES ('819', '1', 'god', '127.0.0.1', '/api/get/path/info', '/api/get/path/info', '', '{\"path\":\"\\/consumer\"}', '1', '1551278319.437');
+INSERT INTO `yy_admin_log` VALUES ('820', '1', 'god', '127.0.0.1', '/api/get/path/info', '/api/get/path/info', '', '{\"path\":\"\\/consumer\"}', '1', '1551278327.627');
+INSERT INTO `yy_admin_log` VALUES ('821', '1', 'god', '127.0.0.1', '/api/get/path/info', '/api/get/path/info', '', '{\"path\":\"\\/consumer\"}', '1', '1551278328.443');
+INSERT INTO `yy_admin_log` VALUES ('822', '1', 'god', '127.0.0.1', '/api/get/path/info', '/api/get/path/info', '', '{\"path\":\"\\/consumer\"}', '1', '1551278335.995');
+INSERT INTO `yy_admin_log` VALUES ('823', '1', 'god', '127.0.0.1', '/api/get/path/info', '/api/get/path/info', '', '{\"path\":\"\\/system\\/rule\"}', '1', '1551278343.142');
+INSERT INTO `yy_admin_log` VALUES ('824', '1', 'god', '127.0.0.1', '/api/system/rule/list', '/api/system/rule/list?menu=1&status=1', '', '{\"menu\":\"1\",\"status\":\"1\"}', '1', '1551278343.143');
+INSERT INTO `yy_admin_log` VALUES ('825', '1', 'god', '127.0.0.1', '/api/system/rule/routes', '/api/system/rule/routes', '', '[]', '1', '1551278343.143');
+INSERT INTO `yy_admin_log` VALUES ('826', '1', 'god', '127.0.0.1', '/api/system/rule/list', '/api/system/rule/list', '', '[]', '1', '1551278343.199');
+INSERT INTO `yy_admin_log` VALUES ('827', '1', 'god', '127.0.0.1', '/api/system/rule/get', '/api/system/rule/get?id=35', '', '{\"id\":\"35\"}', '1', '1551278349.150');
+INSERT INTO `yy_admin_log` VALUES ('828', '1', 'god', '127.0.0.1', '/api/get/path/info', '/api/get/path/info', '', '{\"path\":\"\\/system\\/rule\"}', '1', '1551278392.703');
+INSERT INTO `yy_admin_log` VALUES ('829', '1', 'god', '127.0.0.1', '/api/system/rule/list', '/api/system/rule/list', '', '[]', '1', '1551278392.745');
+INSERT INTO `yy_admin_log` VALUES ('830', '1', 'god', '127.0.0.1', '/api/system/rule/list', '/api/system/rule/list?menu=1&status=1', '', '{\"menu\":\"1\",\"status\":\"1\"}', '1', '1551278392.753');
+INSERT INTO `yy_admin_log` VALUES ('831', '1', 'god', '127.0.0.1', '/api/system/rule/routes', '/api/system/rule/routes', '', '[]', '1', '1551278392.755');
+INSERT INTO `yy_admin_log` VALUES ('832', '1', 'god', '127.0.0.1', '/api/get/path/info', '/api/get/path/info', '', '{\"path\":\"\\/consumer\"}', '1', '1551278395.318');
+INSERT INTO `yy_admin_log` VALUES ('833', '1', 'god', '127.0.0.1', '/api/get/path/info', '/api/get/path/info', '', '{\"path\":\"\\/consumer\"}', '1', '1551278406.657');
+INSERT INTO `yy_admin_log` VALUES ('834', '1', 'god', '127.0.0.1', '/api/get/path/info', '/api/get/path/info', '', '{\"path\":\"\\/consumer\"}', '1', '1551278407.314');
+INSERT INTO `yy_admin_log` VALUES ('835', '1', 'god', '127.0.0.1', '/api/get/path/info', '/api/get/path/info', '', '{\"path\":\"\\/consumer\"}', '1', '1551278407.620');
+INSERT INTO `yy_admin_log` VALUES ('836', '1', 'god', '127.0.0.1', '/api/get/path/info', '/api/get/path/info', '', '{\"path\":\"\\/consumer\"}', '1', '1551278407.957');
+INSERT INTO `yy_admin_log` VALUES ('837', '1', 'god', '127.0.0.1', '/api/get/path/info', '/api/get/path/info', '', '{\"path\":\"\\/consumer\"}', '1', '1551278408.611');
+INSERT INTO `yy_admin_log` VALUES ('838', '1', 'god', '127.0.0.1', '/api/get/path/info', '/api/get/path/info', '', '{\"path\":\"\\/system\\/rule\"}', '1', '1551278413.050');
+INSERT INTO `yy_admin_log` VALUES ('839', '1', 'god', '127.0.0.1', '/api/system/rule/list', '/api/system/rule/list?menu=1&status=1', '', '{\"menu\":\"1\",\"status\":\"1\"}', '1', '1551278413.059');
+INSERT INTO `yy_admin_log` VALUES ('840', '1', 'god', '127.0.0.1', '/api/system/rule/routes', '/api/system/rule/routes', '', '[]', '1', '1551278413.061');
+INSERT INTO `yy_admin_log` VALUES ('841', '1', 'god', '127.0.0.1', '/api/system/rule/list', '/api/system/rule/list', '', '[]', '1', '1551278413.067');
+INSERT INTO `yy_admin_log` VALUES ('842', '1', 'god', '127.0.0.1', '/api/system/rule/get', '/api/system/rule/get?id=35', '', '{\"id\":\"35\"}', '1', '1551278415.499');
+INSERT INTO `yy_admin_log` VALUES ('843', '1', 'god', '127.0.0.1', '/api/system/rule/get', '/api/system/rule/get?id=34', '', '{\"id\":\"34\"}', '1', '1551278418.475');
+INSERT INTO `yy_admin_log` VALUES ('844', '1', 'god', '127.0.0.1', '/api/system/rule/get', '/api/system/rule/get?id=35', '', '{\"id\":\"35\"}', '1', '1551278420.671');
+INSERT INTO `yy_admin_log` VALUES ('845', '1', 'god', '127.0.0.1', '/api/system/rule/get', '/api/system/rule/get?id=28', '', '{\"id\":\"28\"}', '1', '1551278435.308');
+INSERT INTO `yy_admin_log` VALUES ('846', '1', 'god', '127.0.0.1', '/api/system/rule/get', '/api/system/rule/get?id=6', '', '{\"id\":\"6\"}', '1', '1551278440.398');
+INSERT INTO `yy_admin_log` VALUES ('847', '1', 'god', '127.0.0.1', '/api/system/rule/get', '/api/system/rule/get?id=27', '', '{\"id\":\"27\"}', '1', '1551278447.354');
+INSERT INTO `yy_admin_log` VALUES ('848', '1', 'god', '127.0.0.1', '/api/system/rule/get', '/api/system/rule/get?id=34', '', '{\"id\":\"34\"}', '1', '1551278451.341');
+INSERT INTO `yy_admin_log` VALUES ('849', '1', 'god', '127.0.0.1', '/api/system/rule/get', '/api/system/rule/get?id=35', '', '{\"id\":\"35\"}', '1', '1551278453.775');
+INSERT INTO `yy_admin_log` VALUES ('850', '1', 'god', '127.0.0.1', '/api/system/rule/get', '/api/system/rule/get?id=34', '', '{\"id\":\"34\"}', '1', '1551278456.996');
+INSERT INTO `yy_admin_log` VALUES ('851', '1', 'god', '127.0.0.1', '/api/system/rule/get', '/api/system/rule/get?id=35', '', '{\"id\":\"35\"}', '1', '1551278458.108');
+INSERT INTO `yy_admin_log` VALUES ('852', '1', 'god', '127.0.0.1', '/api/system/rule/get', '/api/system/rule/get?id=35', '', '{\"id\":\"35\"}', '1', '1551278461.572');
+INSERT INTO `yy_admin_log` VALUES ('853', '1', 'god', '127.0.0.1', '/api/get/path/info', '/api/get/path/info', '', '{\"path\":\"\\/system\\/consumer\"}', '1', '1551278489.349');
+INSERT INTO `yy_admin_log` VALUES ('854', '1', 'god', '127.0.0.1', '/api/get/path/info', '/api/get/path/info', '', '{\"path\":\"\\/consumer\"}', '1', '1551278491.886');
+INSERT INTO `yy_admin_log` VALUES ('855', '1', 'god', '127.0.0.1', '/api/get/path/info', '/api/get/path/info', '', '{\"path\":\"\\/consumer\"}', '1', '1551278492.866');
+INSERT INTO `yy_admin_log` VALUES ('856', '1', 'god', '127.0.0.1', '/api/get/path/info', '/api/get/path/info', '', '{\"path\":\"\\/34-35\"}', '1', '1551278508.078');
+INSERT INTO `yy_admin_log` VALUES ('857', '1', 'god', '127.0.0.1', '/api/get/path/info', '/api/get/path/info', '', '{\"path\":\"\\/system\\/rule\"}', '1', '1551278511.946');
+INSERT INTO `yy_admin_log` VALUES ('858', '1', 'god', '127.0.0.1', '/api/system/rule/list', '/api/system/rule/list', '', '[]', '1', '1551278511.953');
+INSERT INTO `yy_admin_log` VALUES ('859', '1', 'god', '127.0.0.1', '/api/system/rule/list', '/api/system/rule/list?menu=1&status=1', '', '{\"menu\":\"1\",\"status\":\"1\"}', '1', '1551278511.956');
+INSERT INTO `yy_admin_log` VALUES ('860', '1', 'god', '127.0.0.1', '/api/system/rule/routes', '/api/system/rule/routes', '', '[]', '1', '1551278511.960');
+INSERT INTO `yy_admin_log` VALUES ('861', '1', 'god', '127.0.0.1', '/api/system/rule/get', '/api/system/rule/get?id=35', '', '{\"id\":\"35\"}', '1', '1551278513.881');
+INSERT INTO `yy_admin_log` VALUES ('862', '1', 'god', '127.0.0.1', '/api/get/path/info', '/api/get/path/info', '', '{\"path\":\"\\/system\\/consumer\"}', '1', '1551278521.188');
+INSERT INTO `yy_admin_log` VALUES ('863', '1', 'god', '127.0.0.1', '/api/get/path/info', '/api/get/path/info', '', '{\"path\":\"\\/consumer\"}', '1', '1551278544.595');
+INSERT INTO `yy_admin_log` VALUES ('864', '1', 'god', '127.0.0.1', '/api/get/path/info', '/api/get/path/info', '', '{\"path\":\"\\/system\\/consumer\"}', '1', '1551278562.671');
+INSERT INTO `yy_admin_log` VALUES ('865', '1', 'god', '127.0.0.1', '/api/get/path/info', '/api/get/path/info', '', '{\"path\":\"\\/system\\/consumer\"}', '1', '1551278564.812');
+INSERT INTO `yy_admin_log` VALUES ('866', '1', 'god', '127.0.0.1', '/api/get/path/info', '/api/get/path/info', '', '{\"path\":\"\\/system\\/consumer\"}', '1', '1551278565.453');
+INSERT INTO `yy_admin_log` VALUES ('867', '1', 'god', '127.0.0.1', '/api/get/path/info', '/api/get/path/info', '', '{\"path\":\"\\/system\\/consumer\"}', '1', '1551278565.983');
+INSERT INTO `yy_admin_log` VALUES ('868', '1', 'god', '127.0.0.1', '/api/get/path/info', '/api/get/path/info', '', '{\"path\":\"\\/system\\/consumer\"}', '1', '1551278582.954');
+INSERT INTO `yy_admin_log` VALUES ('869', '1', 'god', '127.0.0.1', '/api/get/path/info', '/api/get/path/info', '', '{\"path\":\"\\/system\\/consumer\"}', '1', '1551278584.091');
+INSERT INTO `yy_admin_log` VALUES ('870', '1', 'god', '127.0.0.1', '/api/system/consumer/list', '/api/system/consumer/list?page=1&pageSize=20&id=1', '', '{\"page\":\"1\",\"pageSize\":\"20\",\"id\":\"1\"}', '1', '1551278632.102');
+INSERT INTO `yy_admin_log` VALUES ('871', '1', 'god', '127.0.0.1', '/api/system/consumer/list', '/api/system/consumer/list?page=1&pageSize=20&id=1', '', '{\"page\":\"1\",\"pageSize\":\"20\",\"id\":\"1\"}', '1', '1551278662.041');
+INSERT INTO `yy_admin_log` VALUES ('872', '1', 'god', '127.0.0.1', '/api/system/consumer/list', '/api/system/consumer/list?page=1&pageSize=20&id=1', '', '{\"page\":\"1\",\"pageSize\":\"20\",\"id\":\"1\"}', '1', '1551278695.782');
+INSERT INTO `yy_admin_log` VALUES ('873', '1', 'god', '127.0.0.1', '/api/get/path/info', '/api/get/path/info', '', '{\"path\":\"\\/system\\/consumer\"}', '1', '1551278728.816');
+INSERT INTO `yy_admin_log` VALUES ('874', '1', 'god', '127.0.0.1', '/api/get/path/info', '/api/get/path/info', '', '{\"path\":\"\\/system\\/consumer\"}', '1', '1551278730.477');
+INSERT INTO `yy_admin_log` VALUES ('875', '1', 'god', '127.0.0.1', '/api/get/path/info', '/api/get/path/info', '', '{\"path\":\"\\/system\\/consumer\"}', '1', '1551278730.978');
+INSERT INTO `yy_admin_log` VALUES ('876', '1', 'god', '127.0.0.1', '/api/get/path/info', '/api/get/path/info', '', '{\"path\":\"\\/system\\/consumer\"}', '1', '1551278731.398');
+INSERT INTO `yy_admin_log` VALUES ('877', '1', 'god', '127.0.0.1', '/api/get/path/info', '/api/get/path/info', '', '{\"path\":\"\\/system\\/consumer\"}', '1', '1551278736.169');
+INSERT INTO `yy_admin_log` VALUES ('878', '1', 'god', '127.0.0.1', '/api/get/path/info', '/api/get/path/info', '', '{\"path\":\"\\/system\\/consumer\"}', '1', '1551278736.686');
+INSERT INTO `yy_admin_log` VALUES ('879', '1', 'god', '127.0.0.1', '/api/get/path/info', '/api/get/path/info', '', '{\"path\":\"\\/system\\/consumer\"}', '1', '1551278736.933');
+INSERT INTO `yy_admin_log` VALUES ('880', '1', 'god', '127.0.0.1', '/api/get/path/info', '/api/get/path/info', '', '{\"path\":\"\\/system\\/consumer\"}', '1', '1551278737.172');
+INSERT INTO `yy_admin_log` VALUES ('881', '1', 'god', '127.0.0.1', '/api/get/path/info', '/api/get/path/info', '', '{\"path\":\"\\/system\\/consumer\"}', '1', '1551278737.395');
+INSERT INTO `yy_admin_log` VALUES ('882', '1', 'god', '127.0.0.1', '/api/get/path/info', '/api/get/path/info', '', '{\"path\":\"\\/system\\/consumer\"}', '1', '1551278737.582');
+INSERT INTO `yy_admin_log` VALUES ('883', '1', 'god', '127.0.0.1', '/api/get/path/info', '/api/get/path/info', '', '{\"path\":\"\\/system\\/consumer\"}', '1', '1551278737.809');
+INSERT INTO `yy_admin_log` VALUES ('884', '1', 'god', '127.0.0.1', '/api/get/path/info', '/api/get/path/info', '', '{\"path\":\"\\/system\\/consumer\"}', '1', '1551278738.064');
+INSERT INTO `yy_admin_log` VALUES ('885', '1', 'god', '127.0.0.1', '/api/get/path/info', '/api/get/path/info', '', '{\"path\":\"\\/system\\/consumer\"}', '1', '1551278882.883');
+INSERT INTO `yy_admin_log` VALUES ('886', '1', 'god', '127.0.0.1', '/api/get/path/info', '/api/get/path/info', '', '{\"path\":\"\\/system\\/consumer\"}', '1', '1551278883.467');
+INSERT INTO `yy_admin_log` VALUES ('887', '1', 'god', '127.0.0.1', '/api/get/path/info', '/api/get/path/info', '', '{\"path\":\"\\/system\\/consumer\"}', '1', '1551278883.723');
+INSERT INTO `yy_admin_log` VALUES ('888', '1', 'god', '127.0.0.1', '/api/get/path/info', '/api/get/path/info', '', '{\"path\":\"\\/system\\/consumer\"}', '1', '1551278962.434');
+INSERT INTO `yy_admin_log` VALUES ('889', '1', 'god', '127.0.0.1', '/api/get/path/info', '/api/get/path/info', '', '{\"path\":\"\\/system\\/consumer\"}', '1', '1551278963.104');
+INSERT INTO `yy_admin_log` VALUES ('890', '1', 'god', '127.0.0.1', '/api/get/path/info', '/api/get/path/info', '', '{\"path\":\"\\/system\\/logs\"}', '1', '1551279004.313');
+INSERT INTO `yy_admin_log` VALUES ('891', '1', 'god', '127.0.0.1', '/api/system/admin/loglist', '/api/system/admin/loglist?page=1&pageSize=20', '', '{\"page\":\"1\",\"pageSize\":\"20\"}', '1', '1551279004.341');
+INSERT INTO `yy_admin_log` VALUES ('892', '1', 'god', '127.0.0.1', '/api/get/path/info', '/api/get/path/info', '', '{\"path\":\"\\/system\\/consumer\"}', '1', '1551279035.213');
+INSERT INTO `yy_admin_log` VALUES ('893', '1', 'god', '127.0.0.1', '/api/get/path/info', '/api/get/path/info', '', '{\"path\":\"\\/system\\/logs\"}', '1', '1551279051.807');
+INSERT INTO `yy_admin_log` VALUES ('894', '1', 'god', '127.0.0.1', '/api/system/admin/loglist', '/api/system/admin/loglist?page=1&pageSize=20', '', '{\"page\":\"1\",\"pageSize\":\"20\"}', '1', '1551279051.809');
+INSERT INTO `yy_admin_log` VALUES ('895', '1', 'god', '127.0.0.1', '/api/get/path/info', '/api/get/path/info', '', '{\"path\":\"\\/system\\/consumer\"}', '1', '1551279086.134');
+INSERT INTO `yy_admin_log` VALUES ('896', '1', 'god', '127.0.0.1', '/api/get/path/info', '/api/get/path/info', '', '{\"path\":\"\\/system\\/logs\"}', '1', '1551279093.216');
+INSERT INTO `yy_admin_log` VALUES ('897', '1', 'god', '127.0.0.1', '/api/system/admin/loglist', '/api/system/admin/loglist?page=1&pageSize=20', '', '{\"page\":\"1\",\"pageSize\":\"20\"}', '1', '1551279093.234');
+INSERT INTO `yy_admin_log` VALUES ('898', '1', 'god', '127.0.0.1', '/api/get/path/info', '/api/get/path/info', '', '{\"path\":\"\\/system\\/consumer\"}', '1', '1551279097.589');
+INSERT INTO `yy_admin_log` VALUES ('899', '1', 'god', '127.0.0.1', '/api/get/path/info', '/api/get/path/info', '', '{\"path\":\"\\/system\\/rule\"}', '1', '1551279115.679');
+INSERT INTO `yy_admin_log` VALUES ('900', '1', 'god', '127.0.0.1', '/api/system/rule/routes', '/api/system/rule/routes', '', '[]', '1', '1551279115.696');
+INSERT INTO `yy_admin_log` VALUES ('901', '1', 'god', '127.0.0.1', '/api/system/rule/list', '/api/system/rule/list?menu=1&status=1', '', '{\"menu\":\"1\",\"status\":\"1\"}', '1', '1551279115.730');
+INSERT INTO `yy_admin_log` VALUES ('902', '1', 'god', '127.0.0.1', '/api/system/rule/list', '/api/system/rule/list', '', '[]', '1', '1551279115.737');
+INSERT INTO `yy_admin_log` VALUES ('903', '1', 'god', '127.0.0.1', '/api/system/rule/get', '/api/system/rule/get?id=29', '', '{\"id\":\"29\"}', '1', '1551279121.816');
+INSERT INTO `yy_admin_log` VALUES ('904', '1', 'god', '127.0.0.1', '/api/system/rule/save', '/api/system/rule/save', '', '{\"id\":29,\"name\":\"\\/system\",\"title\":\"\\u5ba2\\u6237\\u7ba1\\u7406\",\"type\":1,\"status\":true,\"menu\":\"1\",\"condition\":null,\"remark\":null,\"icon\":\"<i class=\\\"fa fa-users\\\"><\\/i>\",\"sort\":2,\"deleted\":0}', '1', '1551279132.744');
+INSERT INTO `yy_admin_log` VALUES ('905', '1', 'god', '127.0.0.1', '/api/system/rule/save', '/api/system/rule/save', '', '{\"id\":29,\"name\":\"\\/system\",\"title\":\"\\u5ba2\\u6237\\u7ba1\\u7406\",\"type\":1,\"status\":true,\"menu\":\"1\",\"condition\":null,\"remark\":null,\"icon\":\"<i class=\\\"fa fa-users\\\"><\\/i>\",\"sort\":2,\"deleted\":0}', '1', '1551279136.024');
+INSERT INTO `yy_admin_log` VALUES ('906', '1', 'god', '127.0.0.1', '/api/get/path/info', '/api/get/path/info', '', '{\"path\":\"\\/system\\/rule\"}', '1', '1551279153.888');
+INSERT INTO `yy_admin_log` VALUES ('907', '1', 'god', '127.0.0.1', '/api/system/rule/routes', '/api/system/rule/routes', '', '[]', '1', '1551279153.895');
+INSERT INTO `yy_admin_log` VALUES ('908', '1', 'god', '127.0.0.1', '/api/system/rule/list', '/api/system/rule/list?menu=1&status=1', '', '{\"menu\":\"1\",\"status\":\"1\"}', '1', '1551279153.937');
+INSERT INTO `yy_admin_log` VALUES ('909', '1', 'god', '127.0.0.1', '/api/system/rule/list', '/api/system/rule/list', '', '[]', '1', '1551279153.952');
+INSERT INTO `yy_admin_log` VALUES ('910', '1', 'god', '127.0.0.1', '/api/system/rule/get', '/api/system/rule/get?id=29', '', '{\"id\":\"29\"}', '1', '1551279157.105');
+INSERT INTO `yy_admin_log` VALUES ('911', '1', 'god', '127.0.0.1', '/api/system/rule/get', '/api/system/rule/get?id=27', '', '{\"id\":\"27\"}', '1', '1551279165.531');
+INSERT INTO `yy_admin_log` VALUES ('912', '1', 'god', '127.0.0.1', '/api/system/rule/get', '/api/system/rule/get?id=27', '', '{\"id\":\"27\"}', '1', '1551279167.676');
+INSERT INTO `yy_admin_log` VALUES ('913', '1', 'god', '127.0.0.1', '/api/system/rule/get', '/api/system/rule/get?id=28', '', '{\"id\":\"28\"}', '1', '1551279173.536');
+INSERT INTO `yy_admin_log` VALUES ('914', '1', 'god', '127.0.0.1', '/api/system/rule/get', '/api/system/rule/get?id=6', '', '{\"id\":\"6\"}', '1', '1551279183.385');
+INSERT INTO `yy_admin_log` VALUES ('915', '1', 'god', '127.0.0.1', '/api/system/rule/get', '/api/system/rule/get?id=6', '', '{\"id\":\"6\"}', '1', '1551279185.605');
+INSERT INTO `yy_admin_log` VALUES ('916', '1', 'god', '127.0.0.1', '/api/system/rule/get', '/api/system/rule/get?id=35', '', '{\"id\":\"35\"}', '1', '1551279216.598');
+INSERT INTO `yy_admin_log` VALUES ('917', '1', 'god', '127.0.0.1', '/api/system/rule/save', '/api/system/rule/save', '', '{\"id\":35,\"name\":\"\\/system\\/consumer\",\"title\":\"\\u5ba2\\u6237\\u516c\\u6d77\",\"type\":1,\"status\":true,\"menu\":\"1\",\"condition\":null,\"pid\":34,\"remark\":null,\"icon\":null,\"sort\":1,\"deleted\":0}', '1', '1551279224.308');
+INSERT INTO `yy_admin_log` VALUES ('918', '1', 'god', '127.0.0.1', '/api/system/rule/list', '/api/system/rule/list', '', '[]', '1', '1551279224.428');
+INSERT INTO `yy_admin_log` VALUES ('919', '1', 'god', '127.0.0.1', '/api/system/rule/list', '/api/system/rule/list?menu=1&status=1', '', '{\"menu\":\"1\",\"status\":\"1\"}', '1', '1551279224.442');
+INSERT INTO `yy_admin_log` VALUES ('920', '1', 'god', '127.0.0.1', '/api/system/rule/get', '/api/system/rule/get?id=6', '', '{\"id\":\"6\"}', '1', '1551279229.967');
+INSERT INTO `yy_admin_log` VALUES ('921', '1', 'god', '127.0.0.1', '/api/get/path/info', '/api/get/path/info', '', '{\"path\":\"\\/system\\/rule\"}', '1', '1551279242.984');
+INSERT INTO `yy_admin_log` VALUES ('922', '1', 'god', '127.0.0.1', '/api/system/rule/routes', '/api/system/rule/routes', '', '[]', '1', '1551279242.996');
+INSERT INTO `yy_admin_log` VALUES ('923', '1', 'god', '127.0.0.1', '/api/system/rule/list', '/api/system/rule/list?menu=1&status=1', '', '{\"menu\":\"1\",\"status\":\"1\"}', '1', '1551279243.042');
+INSERT INTO `yy_admin_log` VALUES ('924', '1', 'god', '127.0.0.1', '/api/system/rule/list', '/api/system/rule/list', '', '[]', '1', '1551279243.047');
+INSERT INTO `yy_admin_log` VALUES ('925', '1', 'god', '127.0.0.1', '/api/get/path/info', '/api/get/path/info', '', '{\"path\":\"\\/system\\/consumer\"}', '1', '1551279246.246');
+INSERT INTO `yy_admin_log` VALUES ('926', '1', 'god', '127.0.0.1', '/api/get/path/info', '/api/get/path/info', '', '{\"path\":\"\\/system\\/rule\"}', '1', '1551279267.354');
+INSERT INTO `yy_admin_log` VALUES ('927', '1', 'god', '127.0.0.1', '/api/system/rule/routes', '/api/system/rule/routes', '', '[]', '1', '1551279267.357');
+INSERT INTO `yy_admin_log` VALUES ('928', '1', 'god', '127.0.0.1', '/api/system/rule/list', '/api/system/rule/list?menu=1&status=1', '', '{\"menu\":\"1\",\"status\":\"1\"}', '1', '1551279267.362');
+INSERT INTO `yy_admin_log` VALUES ('929', '1', 'god', '127.0.0.1', '/api/system/rule/list', '/api/system/rule/list', '', '[]', '1', '1551279267.363');
+INSERT INTO `yy_admin_log` VALUES ('930', '1', 'god', '127.0.0.1', '/api/system/rule/get', '/api/system/rule/get?id=34', '', '{\"id\":\"34\"}', '1', '1551279269.577');
+INSERT INTO `yy_admin_log` VALUES ('931', '1', 'god', '127.0.0.1', '/api/system/rule/save', '/api/system/rule/save', '', '{\"id\":34,\"name\":\"\\/system\\/consumermanage\",\"title\":\"\\u5ba2\\u6237\\u7ba1\\u7406\",\"type\":1,\"status\":true,\"menu\":\"1\",\"condition\":null,\"pid\":29,\"remark\":null,\"icon\":\"<i class=\\\"fa fa-users\\\"><\\/i>\",\"sort\":1,\"deleted\":0}', '1', '1551279288.876');
+INSERT INTO `yy_admin_log` VALUES ('932', '1', 'god', '127.0.0.1', '/api/system/rule/list', '/api/system/rule/list', '', '[]', '1', '1551279288.988');
+INSERT INTO `yy_admin_log` VALUES ('933', '1', 'god', '127.0.0.1', '/api/system/rule/list', '/api/system/rule/list?menu=1&status=1', '', '{\"menu\":\"1\",\"status\":\"1\"}', '1', '1551279289.029');
+INSERT INTO `yy_admin_log` VALUES ('934', '1', 'god', '127.0.0.1', '/api/get/path/info', '/api/get/path/info', '', '{\"path\":\"\\/system\\/consumer\"}', '1', '1551279294.158');
+INSERT INTO `yy_admin_log` VALUES ('935', '1', 'god', '127.0.0.1', '/api/get/path/info', '/api/get/path/info', '', '{\"path\":\"\\/system\\/consumer\"}', '1', '1551279307.928');
+INSERT INTO `yy_admin_log` VALUES ('936', '1', 'god', '127.0.0.1', '/api/get/path/info', '/api/get/path/info', '', '{\"path\":\"\\/system\\/consumer\"}', '1', '1551279497.343');
+INSERT INTO `yy_admin_log` VALUES ('937', '1', 'god', '127.0.0.1', '/api/get/path/info', '/api/get/path/info', '', '{\"path\":\"\\/system\\/consumer\"}', '1', '1551279498.227');
+INSERT INTO `yy_admin_log` VALUES ('938', '1', 'god', '127.0.0.1', '/api/get/path/info', '/api/get/path/info', '', '{\"path\":\"\\/system\\/consumer\"}', '1', '1551279498.791');
+INSERT INTO `yy_admin_log` VALUES ('939', '1', 'god', '127.0.0.1', '/api/get/path/info', '/api/get/path/info', '', '{\"path\":\"\\/system\\/consumer\"}', '1', '1551279499.210');
+INSERT INTO `yy_admin_log` VALUES ('940', '1', 'god', '127.0.0.1', '/api/get/path/info', '/api/get/path/info', '', '{\"path\":\"\\/system\\/consumer\"}', '1', '1551279499.445');
+INSERT INTO `yy_admin_log` VALUES ('941', '1', 'god', '127.0.0.1', '/api/get/path/info', '/api/get/path/info', '', '{\"path\":\"\\/system\\/consumer\"}', '1', '1551279499.692');
+INSERT INTO `yy_admin_log` VALUES ('942', '1', 'god', '127.0.0.1', '/api/get/path/info', '/api/get/path/info', '', '{\"path\":\"\\/system\\/consumer\"}', '1', '1551279499.921');
+INSERT INTO `yy_admin_log` VALUES ('943', '1', 'god', '127.0.0.1', '/api/get/path/info', '/api/get/path/info', '', '{\"path\":\"\\/system\\/consumer\"}', '1', '1551279500.137');
+INSERT INTO `yy_admin_log` VALUES ('944', '1', 'god', '127.0.0.1', '/api/get/path/info', '/api/get/path/info', '', '{\"path\":\"\\/system\\/consumer\"}', '1', '1551279500.356');
+INSERT INTO `yy_admin_log` VALUES ('945', '1', 'god', '127.0.0.1', '/api/get/path/info', '/api/get/path/info', '', '{\"path\":\"\\/system\\/consumer\"}', '1', '1551279500.566');
+INSERT INTO `yy_admin_log` VALUES ('946', '1', 'god', '127.0.0.1', '/api/get/path/info', '/api/get/path/info', '', '{\"path\":\"\\/system\\/consumer\"}', '1', '1551279502.908');
+INSERT INTO `yy_admin_log` VALUES ('947', '1', 'god', '127.0.0.1', '/api/get/path/info', '/api/get/path/info', '', '{\"path\":\"\\/system\\/consumer\"}', '1', '1551279559.654');
+INSERT INTO `yy_admin_log` VALUES ('948', '1', 'god', '127.0.0.1', '/api/get/path/info', '/api/get/path/info', '', '{\"path\":\"\\/system\\/consumer\"}', '1', '1551279561.091');
+INSERT INTO `yy_admin_log` VALUES ('949', '1', 'god', '127.0.0.1', '/api/get/path/info', '/api/get/path/info', '', '{\"path\":\"\\/system\\/consumer\"}', '1', '1551279561.934');
+INSERT INTO `yy_admin_log` VALUES ('950', '1', 'god', '127.0.0.1', '/api/system/admin/loglist', '/api/system/admin/loglist?page=1&pageSize=20', '', '{\"page\":\"1\",\"pageSize\":\"20\"}', '1', '1551279564.371');
+INSERT INTO `yy_admin_log` VALUES ('951', '1', 'god', '127.0.0.1', '/api/get/path/info', '/api/get/path/info', '', '{\"path\":\"\\/system\\/logs\"}', '1', '1551279564.374');
+INSERT INTO `yy_admin_log` VALUES ('952', '1', 'god', '127.0.0.1', '/api/get/path/info', '/api/get/path/info', '', '{\"path\":\"\\/system\\/consumer\"}', '1', '1551279578.136');
+INSERT INTO `yy_admin_log` VALUES ('953', '1', 'god', '127.0.0.1', '/api/get/path/info', '/api/get/path/info', '', '{\"path\":\"\\/system\\/consumer\"}', '1', '1551279813.564');
+INSERT INTO `yy_admin_log` VALUES ('954', '1', 'god', '127.0.0.1', '/api/get/path/info', '/api/get/path/info', '', '{\"path\":\"\\/system\\/logs\"}', '1', '1551279852.035');
+INSERT INTO `yy_admin_log` VALUES ('955', '1', 'god', '127.0.0.1', '/api/system/admin/loglist', '/api/system/admin/loglist?page=1&pageSize=20', '', '{\"page\":\"1\",\"pageSize\":\"20\"}', '1', '1551279852.050');
+INSERT INTO `yy_admin_log` VALUES ('956', '1', 'god', '127.0.0.1', '/api/get/path/info', '/api/get/path/info', '', '{\"path\":\"\\/system\\/logs\"}', '1', '1551279854.928');
+INSERT INTO `yy_admin_log` VALUES ('957', '1', 'god', '127.0.0.1', '/api/system/admin/loglist', '/api/system/admin/loglist?page=1&pageSize=20', '', '{\"page\":\"1\",\"pageSize\":\"20\"}', '1', '1551279854.934');
+INSERT INTO `yy_admin_log` VALUES ('958', '1', 'god', '127.0.0.1', '/api/get/path/info', '/api/get/path/info', '', '{\"path\":\"\\/system\\/consumer\"}', '1', '1551279864.102');
+INSERT INTO `yy_admin_log` VALUES ('959', '1', 'god', '127.0.0.1', '/api/get/path/info', '/api/get/path/info', '', '{\"path\":\"\\/system\\/test1\"}', '1', '1551279872.342');
+INSERT INTO `yy_admin_log` VALUES ('960', '1', 'god', '127.0.0.1', '/api/get/path/info', '/api/get/path/info', '', '{\"path\":\"\\/system\\/test1\"}', '1', '1551279874.861');
+INSERT INTO `yy_admin_log` VALUES ('961', '1', 'god', '127.0.0.1', '/api/get/path/info', '/api/get/path/info', '', '{\"path\":\"\\/system\\/test1\"}', '1', '1551279875.824');
+INSERT INTO `yy_admin_log` VALUES ('962', '1', 'god', '127.0.0.1', '/api/get/path/info', '/api/get/path/info', '', '{\"path\":\"\\/system\\/consumer\"}', '1', '1551279878.022');
+INSERT INTO `yy_admin_log` VALUES ('963', '1', 'god', '127.0.0.1', '/api/get/path/info', '/api/get/path/info', '', '{\"path\":\"\\/system\\/consumer\"}', '1', '1551279963.753');
+INSERT INTO `yy_admin_log` VALUES ('964', '1', 'god', '127.0.0.1', '/api/get/path/info', '/api/get/path/info', '', '{\"path\":\"\\/system\\/group\"}', '1', '1551280119.295');
+INSERT INTO `yy_admin_log` VALUES ('965', '1', 'god', '127.0.0.1', '/api/system/group/list', '/api/system/group/list', '', '[]', '1', '1551280119.305');
+INSERT INTO `yy_admin_log` VALUES ('966', '1', 'god', '127.0.0.1', '/api/system/rule/list', '/api/system/rule/list?status=1', '', '{\"status\":\"1\"}', '1', '1551280119.305');
+INSERT INTO `yy_admin_log` VALUES ('967', '1', 'god', '127.0.0.1', '/api/get/path/info', '/api/get/path/info', '', '{\"path\":\"\\/system\\/consumer\"}', '1', '1551280180.886');
+INSERT INTO `yy_admin_log` VALUES ('968', '1', 'god', '127.0.0.1', '/api/get/path/info', '/api/get/path/info', '', '{\"path\":\"\\/system\\/consumer\"}', '1', '1551280186.423');
+INSERT INTO `yy_admin_log` VALUES ('969', '1', 'god', '127.0.0.1', '/api/get/path/info', '/api/get/path/info', '', '{\"path\":\"\\/system\\/consumer\"}', '1', '1551280202.655');
+INSERT INTO `yy_admin_log` VALUES ('970', '1', 'god', '127.0.0.1', '/api/get/path/info', '/api/get/path/info', '', '{\"path\":\"\\/system\\/consumer\"}', '1', '1551280203.579');
+INSERT INTO `yy_admin_log` VALUES ('971', '1', 'god', '127.0.0.1', '/api/system/group/list', '/api/system/group/list', '', '[]', '1', '1551280206.665');
+INSERT INTO `yy_admin_log` VALUES ('972', '1', 'god', '127.0.0.1', '/api/get/path/info', '/api/get/path/info', '', '{\"path\":\"\\/system\\/group\"}', '1', '1551280206.666');
+INSERT INTO `yy_admin_log` VALUES ('973', '1', 'god', '127.0.0.1', '/api/system/rule/list', '/api/system/rule/list?status=1', '', '{\"status\":\"1\"}', '1', '1551280206.674');
+INSERT INTO `yy_admin_log` VALUES ('974', '1', 'god', '127.0.0.1', '/api/system/group/save', '/api/system/group/save', '', '{\"id\":2,\"title\":\"\\u9ad8\\u7ea7\\u7ba1\\u7406\\u5458\",\"rules\":[29,1,21,2,16,17,18,19,3,13,15,4,7,8,5,9,10,11,12],\"status\":true}', '1', '1551280212.920');
+INSERT INTO `yy_admin_log` VALUES ('975', '1', 'god', '127.0.0.1', '/api/system/group/list', '/api/system/group/list', '', '[]', '1', '1551280213.035');
+INSERT INTO `yy_admin_log` VALUES ('976', '2', 'test', '127.0.0.1', '/api/system/group/list', '/api/system/group/list', '', '[]', '1', '1551280234.292');
+INSERT INTO `yy_admin_log` VALUES ('977', '2', 'test', '127.0.0.1', '/api/get/path/info', '/api/get/path/info', '', '{\"path\":\"\\/system\\/group\"}', '1', '1551280234.292');
+INSERT INTO `yy_admin_log` VALUES ('978', '2', 'test', '127.0.0.1', '/api/system/rule/list', '/api/system/rule/list?status=1', '', '{\"status\":\"1\"}', '1', '1551280234.325');
+INSERT INTO `yy_admin_log` VALUES ('979', '1', 'god', '127.0.0.1', '/api/get/path/info', '/api/get/path/info', '', '{\"path\":\"\\/system\\/group\"}', '1', '1551280259.728');
+INSERT INTO `yy_admin_log` VALUES ('980', '1', 'god', '127.0.0.1', '/api/system/group/list', '/api/system/group/list', '', '[]', '1', '1551280259.743');
+INSERT INTO `yy_admin_log` VALUES ('981', '1', 'god', '127.0.0.1', '/api/system/rule/list', '/api/system/rule/list?status=1', '', '{\"status\":\"1\"}', '1', '1551280259.783');
+INSERT INTO `yy_admin_log` VALUES ('982', '1', 'god', '127.0.0.1', '/api/system/group/save', '/api/system/group/save', '', '{\"id\":2,\"title\":\"\\u9ad8\\u7ea7\\u7ba1\\u7406\\u5458\",\"rules\":[29,34,35,36,1,21,2,16,17,18,19,3,13,15,4,7,8,5,9,10,11,12],\"status\":true}', '1', '1551280271.525');
+INSERT INTO `yy_admin_log` VALUES ('983', '1', 'god', '127.0.0.1', '/api/system/group/list', '/api/system/group/list', '', '[]', '1', '1551280271.663');
+INSERT INTO `yy_admin_log` VALUES ('984', '2', 'test', '127.0.0.1', '/api/get/path/info', '/api/get/path/info', '', '{\"path\":\"\\/system\\/group\"}', '1', '1551280287.359');
+INSERT INTO `yy_admin_log` VALUES ('985', '2', 'test', '127.0.0.1', '/api/system/group/list', '/api/system/group/list', '', '[]', '1', '1551280287.374');
+INSERT INTO `yy_admin_log` VALUES ('986', '2', 'test', '127.0.0.1', '/api/get/path/info', '/api/get/path/info', '', '{\"path\":\"\\/system\\/consumer\"}', '1', '1551280292.659');
+INSERT INTO `yy_admin_log` VALUES ('987', '2', 'test', '127.0.0.1', '/api/get/path/info', '/api/get/path/info', '', '{\"path\":\"\\/system\\/consumer\"}', '1', '1551280294.197');
+INSERT INTO `yy_admin_log` VALUES ('988', '2', 'test', '127.0.0.1', '/api/get/path/info', '/api/get/path/info', '', '{\"path\":\"\\/system\\/consumer\"}', '1', '1551280294.847');
+INSERT INTO `yy_admin_log` VALUES ('989', '2', 'test', '127.0.0.1', '/api/get/path/info', '/api/get/path/info', '', '{\"path\":\"\\/system\\/consumer\"}', '1', '1551280298.582');
+INSERT INTO `yy_admin_log` VALUES ('990', '2', 'test', '127.0.0.1', '/api/get/path/info', '/api/get/path/info', '', '{\"path\":\"\\/system\\/consumer\"}', '1', '1551280299.517');
+INSERT INTO `yy_admin_log` VALUES ('991', '2', 'test', '127.0.0.1', '/api/get/path/info', '/api/get/path/info', '', '{\"path\":\"\\/system\\/consumer\"}', '1', '1551280299.796');
+INSERT INTO `yy_admin_log` VALUES ('992', '2', 'test', '127.0.0.1', '/api/get/path/info', '/api/get/path/info', '', '{\"path\":\"\\/system\\/consumer\"}', '1', '1551280300.042');
+INSERT INTO `yy_admin_log` VALUES ('993', '2', 'test', '127.0.0.1', '/api/get/path/info', '/api/get/path/info', '', '{\"path\":\"\\/system\\/consumer\"}', '1', '1551280300.258');
+INSERT INTO `yy_admin_log` VALUES ('994', '2', 'test', '127.0.0.1', '/api/get/path/info', '/api/get/path/info', '', '{\"path\":\"\\/system\\/profile\"}', '1', '1551280324.426');
+INSERT INTO `yy_admin_log` VALUES ('995', '2', 'test', '127.0.0.1', '/api/system/admin/profile/get', '/api/system/admin/profile/get', '', '[]', '1', '1551280324.428');
+INSERT INTO `yy_admin_log` VALUES ('996', '2', 'test', '127.0.0.1', '/api/get/path/info', '/api/get/path/info', '', '{\"path\":\"\\/system\\/profile\"}', '1', '1551280328.079');
+INSERT INTO `yy_admin_log` VALUES ('997', '2', 'test', '127.0.0.1', '/api/system/admin/profile/get', '/api/system/admin/profile/get', '', '[]', '1', '1551280328.092');
+INSERT INTO `yy_admin_log` VALUES ('998', '2', 'test', '127.0.0.1', '/api/system/admin/profile/get', '/api/system/admin/profile/get', '', '[]', '1', '1551280330.112');
+INSERT INTO `yy_admin_log` VALUES ('999', '2', 'test', '127.0.0.1', '/api/get/path/info', '/api/get/path/info', '', '{\"path\":\"\\/system\\/profile\"}', '1', '1551280330.124');
+INSERT INTO `yy_admin_log` VALUES ('1000', '2', 'test', '127.0.0.1', '/api/get/path/info', '/api/get/path/info', '', '{\"path\":\"\\/system\\/profile\"}', '1', '1551280337.124');
+INSERT INTO `yy_admin_log` VALUES ('1001', '2', 'test', '127.0.0.1', '/api/system/admin/profile/get', '/api/system/admin/profile/get', '', '[]', '1', '1551280337.124');
+INSERT INTO `yy_admin_log` VALUES ('1002', '2', 'test', '127.0.0.1', '/api/get/path/info', '/api/get/path/info', '', '{\"path\":\"\\/system\\/consumer\"}', '1', '1551280340.286');
+INSERT INTO `yy_admin_log` VALUES ('1003', '2', 'test', '127.0.0.1', '/api/get/path/info', '/api/get/path/info', '', '{\"path\":\"\\/system\\/consumer\"}', '1', '1551280346.536');
+INSERT INTO `yy_admin_log` VALUES ('1004', '2', 'test', '127.0.0.1', '/api/get/path/info', '/api/get/path/info', '', '{\"path\":\"\\/system\\/consumer\"}', '1', '1551280437.441');
+INSERT INTO `yy_admin_log` VALUES ('1005', '1', 'god', '127.0.0.1', '/api/system/admin/loglist', '/api/system/admin/loglist?page=1&pageSize=20', '', '{\"page\":\"1\",\"pageSize\":\"20\"}', '1', '1551280458.440');
+INSERT INTO `yy_admin_log` VALUES ('1006', '1', 'god', '127.0.0.1', '/api/get/path/info', '/api/get/path/info', '', '{\"path\":\"\\/system\\/consumer\"}', '1', '1551280458.445');
+INSERT INTO `yy_admin_log` VALUES ('1007', '1', 'god', '127.0.0.1', '/api/get/path/info', '/api/get/path/info', '', '{\"path\":\"\\/system\\/consumer\"}', '1', '1551280466.493');
+INSERT INTO `yy_admin_log` VALUES ('1008', '1', 'god', '127.0.0.1', '/api/system/admin/loglist', '/api/system/admin/loglist?page=1&pageSize=20', '', '{\"page\":\"1\",\"pageSize\":\"20\"}', '1', '1551280470.781');
+INSERT INTO `yy_admin_log` VALUES ('1009', '1', 'god', '127.0.0.1', '/api/system/admin/loglist', '/api/system/admin/loglist?page=1&pageSize=20', '', '{\"page\":\"1\",\"pageSize\":\"20\"}', '1', '1551280473.717');
+INSERT INTO `yy_admin_log` VALUES ('1010', '1', 'god', '127.0.0.1', '/api/get/path/info', '/api/get/path/info', '', '{\"path\":\"\\/system\\/consumer\"}', '1', '1551280473.745');
+INSERT INTO `yy_admin_log` VALUES ('1011', '1', 'god', '127.0.0.1', '/api/get/path/info', '/api/get/path/info', '', '{\"path\":\"\\/system\\/consumer\"}', '1', '1551280493.382');
+INSERT INTO `yy_admin_log` VALUES ('1012', '1', 'god', '127.0.0.1', '/api/system/admin/loglist', '/api/system/admin/loglist?page=1&pageSize=20', '', '{\"page\":\"1\",\"pageSize\":\"20\"}', '1', '1551280493.401');
+INSERT INTO `yy_admin_log` VALUES ('1013', '1', 'god', '127.0.0.1', '/api/get/path/info', '/api/get/path/info', '', '{\"path\":\"\\/system\\/consumer\"}', '1', '1551280497.085');
+INSERT INTO `yy_admin_log` VALUES ('1014', '1', 'god', '127.0.0.1', '/api/system/consumer/list', '/api/system/consumer/list?page=1&pageSize=20', '', '{\"page\":\"1\",\"pageSize\":\"20\"}', '1', '1551280497.095');
+INSERT INTO `yy_admin_log` VALUES ('1015', '1', 'god', '127.0.0.1', '/api/system/consumer/list', '/api/system/consumer/list?page=1&pageSize=20', '', '{\"page\":\"1\",\"pageSize\":\"20\"}', '1', '1551280508.049');
+INSERT INTO `yy_admin_log` VALUES ('1016', '1', 'god', '127.0.0.1', '/api/get/path/info', '/api/get/path/info', '', '{\"path\":\"\\/system\\/logs\"}', '1', '1551280508.093');
+INSERT INTO `yy_admin_log` VALUES ('1017', '1', 'god', '127.0.0.1', '/api/system/admin/loglist', '/api/system/admin/loglist?page=1&pageSize=20', '', '{\"page\":\"1\",\"pageSize\":\"20\"}', '1', '1551280508.126');
+INSERT INTO `yy_admin_log` VALUES ('1018', '1', 'god', '127.0.0.1', '/api/get/path/info', '/api/get/path/info', '', '{\"path\":\"\\/system\\/consumer\"}', '1', '1551280515.433');
+INSERT INTO `yy_admin_log` VALUES ('1019', '1', 'god', '127.0.0.1', '/api/system/consumer/list', '/api/system/consumer/list?page=1&pageSize=20', '', '{\"page\":\"1\",\"pageSize\":\"20\"}', '1', '1551280515.453');
+INSERT INTO `yy_admin_log` VALUES ('1020', '1', 'god', '127.0.0.1', '/api/system/consumer/list', '/api/system/consumer/list?page=1&pageSize=20', '', '{\"page\":\"1\",\"pageSize\":\"20\"}', '1', '1551280616.516');
+INSERT INTO `yy_admin_log` VALUES ('1021', '1', 'god', '127.0.0.1', '/api/get/path/info', '/api/get/path/info', '', '{\"path\":\"\\/system\\/consumer\"}', '1', '1551280845.301');
+INSERT INTO `yy_admin_log` VALUES ('1022', '1', 'god', '127.0.0.1', '/api/system/consumer/list', '/api/system/consumer/list?page=1&pageSize=20', '', '{\"page\":\"1\",\"pageSize\":\"20\"}', '1', '1551280845.331');
+INSERT INTO `yy_admin_log` VALUES ('1023', '1', 'god', '127.0.0.1', '/api/system/consumer/list', '/api/system/consumer/list?page=1&pageSize=20', '', '{\"page\":\"1\",\"pageSize\":\"20\"}', '1', '1551280900.058');
+INSERT INTO `yy_admin_log` VALUES ('1024', '1', 'god', '127.0.0.1', '/api/system/consumer/list', '/api/system/consumer/list?page=1&pageSize=20&tag=%E5%93%88%E5%93%88', '', '{\"page\":\"1\",\"pageSize\":\"20\",\"tag\":\"\\u54c8\\u54c8\"}', '1', '1551280909.459');
+INSERT INTO `yy_admin_log` VALUES ('1025', '1', 'god', '127.0.0.1', '/api/system/consumer/list', '/api/system/consumer/list?page=1&pageSize=20&tag=%E5%93%88', '', '{\"page\":\"1\",\"pageSize\":\"20\",\"tag\":\"\\u54c8\"}', '1', '1551280917.346');
+INSERT INTO `yy_admin_log` VALUES ('1026', '1', 'god', '127.0.0.1', '/api/system/consumer/list', '/api/system/consumer/list?page=1&pageSize=20&tag=', '', '{\"page\":\"1\",\"pageSize\":\"20\",\"tag\":null}', '1', '1551280920.284');
+INSERT INTO `yy_admin_log` VALUES ('1027', '1', 'god', '127.0.0.1', '/api/get/path/info', '/api/get/path/info', '', '{\"path\":\"\\/system\\/consumer\"}', '1', '1551280943.035');
+INSERT INTO `yy_admin_log` VALUES ('1028', '1', 'god', '127.0.0.1', '/api/system/consumer/list', '/api/system/consumer/list?page=1&pageSize=20', '', '{\"page\":\"1\",\"pageSize\":\"20\"}', '1', '1551280943.051');
+INSERT INTO `yy_admin_log` VALUES ('1029', '1', 'god', '127.0.0.1', '/api/system/consumer/list', '/api/system/consumer/list?page=1&pageSize=20', '', '{\"page\":\"1\",\"pageSize\":\"20\"}', '1', '1551281043.817');
+INSERT INTO `yy_admin_log` VALUES ('1030', '1', 'god', '127.0.0.1', '/api/system/consumer/list', '/api/system/consumer/list?page=1&pageSize=20', '', '{\"page\":\"1\",\"pageSize\":\"20\"}', '1', '1551281047.041');
+INSERT INTO `yy_admin_log` VALUES ('1031', '1', 'god', '127.0.0.1', '/api/get/path/info', '/api/get/path/info', '', '{\"path\":\"\\/system\\/consumer\"}', '1', '1551281052.255');
+INSERT INTO `yy_admin_log` VALUES ('1032', '1', 'god', '127.0.0.1', '/api/system/consumer/list', '/api/system/consumer/list?page=1&pageSize=20', '', '{\"page\":\"1\",\"pageSize\":\"20\"}', '1', '1551281052.261');
+INSERT INTO `yy_admin_log` VALUES ('1033', '1', 'god', '127.0.0.1', '/api/system/consumer/list', '/api/system/consumer/list?page=1&pageSize=20', '', '{\"page\":\"1\",\"pageSize\":\"20\"}', '1', '1551281223.303');
+INSERT INTO `yy_admin_log` VALUES ('1034', '1', 'god', '127.0.0.1', '/api/get/path/info', '/api/get/path/info', '', '{\"path\":\"\\/system\\/consumer\"}', '1', '1551281223.307');
+INSERT INTO `yy_admin_log` VALUES ('1035', '1', 'god', '127.0.0.1', '/api/system/consumer/list', '/api/system/consumer/list?page=1&pageSize=20&status=0', '', '{\"page\":\"1\",\"pageSize\":\"20\",\"status\":\"0\"}', '1', '1551281228.813');
+INSERT INTO `yy_admin_log` VALUES ('1036', '1', 'god', '127.0.0.1', '/api/system/consumer/list', '/api/system/consumer/list?page=1&pageSize=20&status=0', '', '{\"page\":\"1\",\"pageSize\":\"20\",\"status\":\"0\"}', '1', '1551281239.634');
+INSERT INTO `yy_admin_log` VALUES ('1037', '1', 'god', '127.0.0.1', '/api/system/consumer/list', '/api/system/consumer/list?page=1&pageSize=20&status=0', '', '{\"page\":\"1\",\"pageSize\":\"20\",\"status\":\"0\"}', '1', '1551281241.445');
+INSERT INTO `yy_admin_log` VALUES ('1038', '1', 'god', '127.0.0.1', '/api/get/path/info', '/api/get/path/info', '', '{\"path\":\"\\/system\\/consumer\"}', '1', '1551281244.095');
+INSERT INTO `yy_admin_log` VALUES ('1039', '1', 'god', '127.0.0.1', '/api/system/consumer/list', '/api/system/consumer/list?page=1&pageSize=20', '', '{\"page\":\"1\",\"pageSize\":\"20\"}', '1', '1551281244.106');
+INSERT INTO `yy_admin_log` VALUES ('1040', '1', 'god', '127.0.0.1', '/api/system/consumer/list', '/api/system/consumer/list?page=1&pageSize=20&status=0', '', '{\"page\":\"1\",\"pageSize\":\"20\",\"status\":\"0\"}', '1', '1551281253.955');
+INSERT INTO `yy_admin_log` VALUES ('1041', '1', 'god', '127.0.0.1', '/api/system/consumer/list', '/api/system/consumer/list?page=1&pageSize=20&status=1', '', '{\"page\":\"1\",\"pageSize\":\"20\",\"status\":\"1\"}', '1', '1551281267.714');
+INSERT INTO `yy_admin_log` VALUES ('1042', '1', 'god', '127.0.0.1', '/api/system/consumer/list', '/api/system/consumer/list?page=1&pageSize=20&status=0', '', '{\"page\":\"1\",\"pageSize\":\"20\",\"status\":\"0\"}', '1', '1551281270.622');
+INSERT INTO `yy_admin_log` VALUES ('1043', '1', 'god', '127.0.0.1', '/api/system/consumer/list', '/api/system/consumer/list?page=1&pageSize=20&status=0', '', '{\"page\":\"1\",\"pageSize\":\"20\",\"status\":\"0\"}', '1', '1551281303.707');
+INSERT INTO `yy_admin_log` VALUES ('1044', '1', 'god', '127.0.0.1', '/api/system/consumer/list', '/api/system/consumer/list?page=1&pageSize=20&status=0', '', '{\"page\":\"1\",\"pageSize\":\"20\",\"status\":\"0\"}', '1', '1551281305.324');
+INSERT INTO `yy_admin_log` VALUES ('1045', '1', 'god', '127.0.0.1', '/api/system/consumer/list', '/api/system/consumer/list?page=1&pageSize=20&status=1', '', '{\"page\":\"1\",\"pageSize\":\"20\",\"status\":\"1\"}', '1', '1551281308.104');
+INSERT INTO `yy_admin_log` VALUES ('1046', '1', 'god', '127.0.0.1', '/api/system/consumer/list', '/api/system/consumer/list?page=1&pageSize=20&status=0', '', '{\"page\":\"1\",\"pageSize\":\"20\",\"status\":\"0\"}', '1', '1551281312.274');
+INSERT INTO `yy_admin_log` VALUES ('1047', '1', 'god', '127.0.0.1', '/api/system/consumer/list', '/api/system/consumer/list?page=1&pageSize=20&status=0', '', '{\"page\":\"1\",\"pageSize\":\"20\",\"status\":\"0\"}', '1', '1551281314.727');
+INSERT INTO `yy_admin_log` VALUES ('1048', '1', 'god', '127.0.0.1', '/api/system/consumer/list', '/api/system/consumer/list?page=1&pageSize=20', '', '{\"page\":\"1\",\"pageSize\":\"20\"}', '1', '1551281319.401');
+INSERT INTO `yy_admin_log` VALUES ('1049', '1', 'god', '127.0.0.1', '/api/get/path/info', '/api/get/path/info', '', '{\"path\":\"\\/system\\/consumer\"}', '1', '1551281319.412');
+INSERT INTO `yy_admin_log` VALUES ('1050', '1', 'god', '127.0.0.1', '/api/system/consumer/list', '/api/system/consumer/list?page=1&pageSize=20&status=1', '', '{\"page\":\"1\",\"pageSize\":\"20\",\"status\":\"1\"}', '1', '1551281321.882');
+INSERT INTO `yy_admin_log` VALUES ('1051', '1', 'god', '127.0.0.1', '/api/system/consumer/list', '/api/system/consumer/list?page=1&pageSize=20&status=2', '', '{\"page\":\"1\",\"pageSize\":\"20\",\"status\":\"2\"}', '1', '1551281324.610');
+INSERT INTO `yy_admin_log` VALUES ('1052', '1', 'god', '127.0.0.1', '/api/get/path/info', '/api/get/path/info', '', '{\"path\":\"\\/system\\/consumer\"}', '1', '1551281374.608');
+INSERT INTO `yy_admin_log` VALUES ('1053', '1', 'god', '127.0.0.1', '/api/system/consumer/list', '/api/system/consumer/list?page=1&pageSize=20', '', '{\"page\":\"1\",\"pageSize\":\"20\"}', '1', '1551281374.668');
+INSERT INTO `yy_admin_log` VALUES ('1054', '1', 'god', '127.0.0.1', '/api/system/consumer/list', '/api/system/consumer/list?page=1&pageSize=20&status=1', '', '{\"page\":\"1\",\"pageSize\":\"20\",\"status\":\"1\"}', '1', '1551281380.470');
+INSERT INTO `yy_admin_log` VALUES ('1055', '1', 'god', '127.0.0.1', '/api/system/consumer/list', '/api/system/consumer/list?page=1&pageSize=20&status=1&state=1', '', '{\"page\":\"1\",\"pageSize\":\"20\",\"status\":\"1\",\"state\":\"1\"}', '1', '1551281382.723');
+INSERT INTO `yy_admin_log` VALUES ('1056', '1', 'god', '127.0.0.1', '/api/system/consumer/list', '/api/system/consumer/list?page=1&pageSize=20&status=1&state=2', '', '{\"page\":\"1\",\"pageSize\":\"20\",\"status\":\"1\",\"state\":\"2\"}', '1', '1551281384.876');
+INSERT INTO `yy_admin_log` VALUES ('1057', '1', 'god', '127.0.0.1', '/api/system/consumer/list', '/api/system/consumer/list?page=1&pageSize=20', '', '{\"page\":\"1\",\"pageSize\":\"20\"}', '1', '1551281393.632');
+INSERT INTO `yy_admin_log` VALUES ('1058', '1', 'god', '127.0.0.1', '/api/get/path/info', '/api/get/path/info', '', '{\"path\":\"\\/system\\/consumer\"}', '1', '1551281550.326');
+INSERT INTO `yy_admin_log` VALUES ('1059', '1', 'god', '127.0.0.1', '/api/system/consumer/list', '/api/system/consumer/list?page=1&pageSize=20', '', '{\"page\":\"1\",\"pageSize\":\"20\"}', '1', '1551281550.332');
+INSERT INTO `yy_admin_log` VALUES ('1060', '1', 'god', '127.0.0.1', '/api/system/consumer/list', '/api/system/consumer/list?page=1&pageSize=20', '', '{\"page\":\"1\",\"pageSize\":\"20\"}', '1', '1551281553.229');
+INSERT INTO `yy_admin_log` VALUES ('1061', '1', 'god', '127.0.0.1', '/api/system/consumer/list', '/api/system/consumer/list?page=1&pageSize=20', '', '{\"page\":\"1\",\"pageSize\":\"20\"}', '1', '1551281556.891');
+INSERT INTO `yy_admin_log` VALUES ('1062', '1', 'god', '127.0.0.1', '/api/system/consumer/list', '/api/system/consumer/list?page=1&pageSize=20', '', '{\"page\":\"1\",\"pageSize\":\"20\"}', '1', '1551281572.188');
+INSERT INTO `yy_admin_log` VALUES ('1063', '1', 'god', '127.0.0.1', '/api/system/consumer/list', '/api/system/consumer/list?page=1&pageSize=20', '', '{\"page\":\"1\",\"pageSize\":\"20\"}', '1', '1551281573.030');
+INSERT INTO `yy_admin_log` VALUES ('1064', '1', 'god', '127.0.0.1', '/api/system/consumer/list', '/api/system/consumer/list?page=1&pageSize=20', '', '{\"page\":\"1\",\"pageSize\":\"20\"}', '1', '1551281573.636');
+INSERT INTO `yy_admin_log` VALUES ('1065', '1', 'god', '127.0.0.1', '/api/system/consumer/list', '/api/system/consumer/list?page=1&pageSize=20', '', '{\"page\":\"1\",\"pageSize\":\"20\"}', '1', '1551281574.053');
+INSERT INTO `yy_admin_log` VALUES ('1066', '1', 'god', '127.0.0.1', '/api/system/consumer/list', '/api/system/consumer/list?page=1&pageSize=20', '', '{\"page\":\"1\",\"pageSize\":\"20\"}', '1', '1551281574.267');
+INSERT INTO `yy_admin_log` VALUES ('1067', '1', 'god', '127.0.0.1', '/api/system/consumer/list', '/api/system/consumer/list?page=1&pageSize=20', '', '{\"page\":\"1\",\"pageSize\":\"20\"}', '1', '1551281574.461');
+INSERT INTO `yy_admin_log` VALUES ('1068', '1', 'god', '127.0.0.1', '/api/system/consumer/list', '/api/system/consumer/list?page=1&pageSize=20', '', '{\"page\":\"1\",\"pageSize\":\"20\"}', '1', '1551281574.665');
+INSERT INTO `yy_admin_log` VALUES ('1069', '1', 'god', '127.0.0.1', '/api/system/consumer/list', '/api/system/consumer/list?page=1&pageSize=20', '', '{\"page\":\"1\",\"pageSize\":\"20\"}', '1', '1551281574.865');
+INSERT INTO `yy_admin_log` VALUES ('1070', '1', 'god', '127.0.0.1', '/api/system/consumer/list', '/api/system/consumer/list?page=1&pageSize=20', '', '{\"page\":\"1\",\"pageSize\":\"20\"}', '1', '1551281575.411');
+INSERT INTO `yy_admin_log` VALUES ('1071', '1', 'god', '127.0.0.1', '/api/system/consumer/list', '/api/system/consumer/list?page=1&pageSize=20', '', '{\"page\":\"1\",\"pageSize\":\"20\"}', '1', '1551281575.617');
+INSERT INTO `yy_admin_log` VALUES ('1072', '1', 'god', '127.0.0.1', '/api/system/consumer/list', '/api/system/consumer/list?page=1&pageSize=20', '', '{\"page\":\"1\",\"pageSize\":\"20\"}', '1', '1551281575.829');
+INSERT INTO `yy_admin_log` VALUES ('1073', '1', 'god', '127.0.0.1', '/api/system/consumer/list', '/api/system/consumer/list?page=1&pageSize=20', '', '{\"page\":\"1\",\"pageSize\":\"20\"}', '1', '1551281576.041');
+INSERT INTO `yy_admin_log` VALUES ('1074', '1', 'god', '127.0.0.1', '/api/get/path/info', '/api/get/path/info', '', '{\"path\":\"\\/system\\/consumer\"}', '1', '1551281582.560');
+INSERT INTO `yy_admin_log` VALUES ('1075', '1', 'god', '127.0.0.1', '/api/system/consumer/list', '/api/system/consumer/list?page=1&pageSize=20', '', '{\"page\":\"1\",\"pageSize\":\"20\"}', '1', '1551281582.564');
+INSERT INTO `yy_admin_log` VALUES ('1076', '1', 'god', '127.0.0.1', '/api/system/consumer/list', '/api/system/consumer/list?page=1&pageSize=20', '', '{\"page\":\"1\",\"pageSize\":\"20\"}', '1', '1551281766.781');
+INSERT INTO `yy_admin_log` VALUES ('1077', '1', 'god', '127.0.0.1', '/api/system/rule/list', '/api/system/rule/list', '', '[]', '1', '1551281766.860');
+INSERT INTO `yy_admin_log` VALUES ('1078', '1', 'god', '127.0.0.1', '/api/system/rule/routes', '/api/system/rule/routes', '', '[]', '1', '1551281766.861');
+INSERT INTO `yy_admin_log` VALUES ('1079', '1', 'god', '127.0.0.1', '/api/system/rule/list', '/api/system/rule/list?menu=1&status=1', '', '{\"menu\":\"1\",\"status\":\"1\"}', '1', '1551281766.859');
+INSERT INTO `yy_admin_log` VALUES ('1080', '1', 'god', '127.0.0.1', '/api/get/path/info', '/api/get/path/info', '', '{\"path\":\"\\/system\\/rule\"}', '1', '1551281766.874');
+INSERT INTO `yy_admin_log` VALUES ('1081', '1', 'god', '127.0.0.1', '/api/get/path/info', '/api/get/path/info', '', '{\"path\":\"\\/system\\/21-4\"}', '1', '1551281771.124');
+INSERT INTO `yy_admin_log` VALUES ('1082', '1', 'god', '127.0.0.1', '/api/get/path/info', '/api/get/path/info', '', '{\"path\":\"\\/system\\/21-3\"}', '1', '1551281773.877');
+INSERT INTO `yy_admin_log` VALUES ('1083', '1', 'god', '127.0.0.1', '/api/get/path/info', '/api/get/path/info', '', '{\"path\":\"\\/system\\/admin\"}', '1', '1551281773.938');
+INSERT INTO `yy_admin_log` VALUES ('1084', '1', 'god', '127.0.0.1', '/api/system/group/list', '/api/system/group/list?status=1', '', '{\"status\":\"1\"}', '1', '1551281773.939');
+INSERT INTO `yy_admin_log` VALUES ('1085', '1', 'god', '127.0.0.1', '/api/system/admin/list', '/api/system/admin/list?page=1&pageSize=20', '', '{\"page\":\"1\",\"pageSize\":\"20\"}', '1', '1551281773.939');
+INSERT INTO `yy_admin_log` VALUES ('1086', '1', 'god', '127.0.0.1', '/api/get/path/info', '/api/get/path/info', '', '{\"path\":\"\\/system\\/21-4\"}', '1', '1551281784.395');
+INSERT INTO `yy_admin_log` VALUES ('1087', '1', 'god', '127.0.0.1', '/api/get/path/info', '/api/get/path/info', '', '{\"path\":\"\\/system\\/group\"}', '1', '1551281784.418');
+INSERT INTO `yy_admin_log` VALUES ('1088', '1', 'god', '127.0.0.1', '/api/get/path/info', '/api/get/path/info', '', '{\"path\":\"\\/system\\/group\"}', '1', '1551281785.715');
+INSERT INTO `yy_admin_log` VALUES ('1089', '1', 'god', '127.0.0.1', '/api/system/rule/list', '/api/system/rule/list?status=1', '', '{\"status\":\"1\"}', '1', '1551281788.786');
+INSERT INTO `yy_admin_log` VALUES ('1090', '1', 'god', '127.0.0.1', '/api/system/group/list', '/api/system/group/list', '', '[]', '1', '1551281788.788');
+INSERT INTO `yy_admin_log` VALUES ('1091', '1', 'god', '127.0.0.1', '/api/get/path/info', '/api/get/path/info', '', '{\"path\":\"\\/system\\/group\"}', '1', '1551281788.829');
+INSERT INTO `yy_admin_log` VALUES ('1092', '1', 'god', '127.0.0.1', '/api/get/path/info', '/api/get/path/info', '', '{\"path\":\"\\/system\\/21-5\"}', '1', '1551281815.669');
+INSERT INTO `yy_admin_log` VALUES ('1093', '1', 'god', '127.0.0.1', '/api/system/rule/routes', '/api/system/rule/routes', '', '[]', '1', '1551281815.743');
+INSERT INTO `yy_admin_log` VALUES ('1094', '1', 'god', '127.0.0.1', '/api/system/rule/list', '/api/system/rule/list?menu=1&status=1', '', '{\"menu\":\"1\",\"status\":\"1\"}', '1', '1551281815.744');
+INSERT INTO `yy_admin_log` VALUES ('1095', '1', 'god', '127.0.0.1', '/api/system/rule/list', '/api/system/rule/list', '', '[]', '1', '1551281815.746');
+INSERT INTO `yy_admin_log` VALUES ('1096', '1', 'god', '127.0.0.1', '/api/get/path/info', '/api/get/path/info', '', '{\"path\":\"\\/system\\/rule\"}', '1', '1551281815.753');
+INSERT INTO `yy_admin_log` VALUES ('1097', '1', 'god', '127.0.0.1', '/api/system/rule/get', '/api/system/rule/get?id=19', '', '{\"id\":\"19\"}', '1', '1551281822.299');
+INSERT INTO `yy_admin_log` VALUES ('1098', '1', 'god', '127.0.0.1', '/api/system/rule/get', '/api/system/rule/get?id=20', '', '{\"id\":\"20\"}', '1', '1551281827.635');
+INSERT INTO `yy_admin_log` VALUES ('1099', '1', 'god', '127.0.0.1', '/api/system/rule/get', '/api/system/rule/get?id=15', '', '{\"id\":\"15\"}', '1', '1551281844.233');
+INSERT INTO `yy_admin_log` VALUES ('1100', '1', 'god', '127.0.0.1', '/api/system/rule/routes', '/api/system/rule/routes', '', '[]', '1', '1551282004.310');
+INSERT INTO `yy_admin_log` VALUES ('1101', '1', 'god', '127.0.0.1', '/api/system/rule/list', '/api/system/rule/list', '', '[]', '1', '1551282004.313');
+INSERT INTO `yy_admin_log` VALUES ('1102', '1', 'god', '127.0.0.1', '/api/system/rule/list', '/api/system/rule/list?menu=1&status=1', '', '{\"menu\":\"1\",\"status\":\"1\"}', '1', '1551282004.319');
+INSERT INTO `yy_admin_log` VALUES ('1103', '1', 'god', '127.0.0.1', '/api/get/path/info', '/api/get/path/info', '', '{\"path\":\"\\/system\\/consumer\"}', '1', '1551282004.384');
+INSERT INTO `yy_admin_log` VALUES ('1104', '1', 'god', '127.0.0.1', '/api/system/consumer/list', '/api/system/consumer/list?page=1&pageSize=20', '', '{\"page\":\"1\",\"pageSize\":\"20\"}', '1', '1551282004.386');
+INSERT INTO `yy_admin_log` VALUES ('1105', '1', 'god', '127.0.0.1', '/api/system/consumer/list', '/api/system/consumer/list?page=1&pageSize=20', '', '{\"page\":\"1\",\"pageSize\":\"20\"}', '1', '1551282008.432');
+INSERT INTO `yy_admin_log` VALUES ('1106', '1', 'god', '127.0.0.1', '/api/get/path/info', '/api/get/path/info', '', '{\"path\":\"\\/system\\/consumer\"}', '1', '1551282008.479');
+INSERT INTO `yy_admin_log` VALUES ('1107', '1', 'god', '127.0.0.1', '/api/system/consumer/list', '/api/system/consumer/list?page=1&pageSize=20', '', '{\"page\":\"1\",\"pageSize\":\"20\"}', '1', '1551282020.562');
+INSERT INTO `yy_admin_log` VALUES ('1108', '1', 'god', '127.0.0.1', '/api/system/consumer/list', '/api/system/consumer/list?page=1&pageSize=20', '', '{\"page\":\"1\",\"pageSize\":\"20\"}', '1', '1551282092.904');
+INSERT INTO `yy_admin_log` VALUES ('1109', '1', 'god', '127.0.0.1', '/api/get/path/info', '/api/get/path/info', '', '{\"path\":\"\\/system\\/consumer\"}', '1', '1551282099.405');
+INSERT INTO `yy_admin_log` VALUES ('1110', '1', 'god', '127.0.0.1', '/api/system/consumer/list', '/api/system/consumer/list?page=1&pageSize=20', '', '{\"page\":\"1\",\"pageSize\":\"20\"}', '1', '1551282099.404');
+INSERT INTO `yy_admin_log` VALUES ('1111', '1', 'god', '127.0.0.1', '/api/system/consumer/list', '/api/system/consumer/list?page=1&pageSize=20', '', '{\"page\":\"1\",\"pageSize\":\"20\"}', '1', '1551282129.064');
+INSERT INTO `yy_admin_log` VALUES ('1112', '1', 'god', '127.0.0.1', '/api/get/path/info', '/api/get/path/info', '', '{\"path\":\"\\/system\\/consumer\"}', '1', '1551282139.393');
+INSERT INTO `yy_admin_log` VALUES ('1113', '1', 'god', '127.0.0.1', '/api/system/consumer/list', '/api/system/consumer/list?page=1&pageSize=20', '', '{\"page\":\"1\",\"pageSize\":\"20\"}', '1', '1551282139.401');
+INSERT INTO `yy_admin_log` VALUES ('1114', '1', 'god', '127.0.0.1', '/api/system/consumer/list', '/api/system/consumer/list?page=1&pageSize=20', '', '{\"page\":\"1\",\"pageSize\":\"20\"}', '1', '1551282147.723');
+INSERT INTO `yy_admin_log` VALUES ('1115', '1', 'god', '127.0.0.1', '/api/system/consumer/list', '/api/system/consumer/list?page=1&pageSize=20', '', '{\"page\":\"1\",\"pageSize\":\"20\"}', '1', '1551282148.750');
+INSERT INTO `yy_admin_log` VALUES ('1116', '1', 'god', '127.0.0.1', '/api/system/consumer/list', '/api/system/consumer/list?page=1&pageSize=20', '', '{\"page\":\"1\",\"pageSize\":\"20\"}', '1', '1551282155.060');
+INSERT INTO `yy_admin_log` VALUES ('1117', '1', 'god', '127.0.0.1', '/api/system/consumer/list', '/api/system/consumer/list?page=1&pageSize=20', '', '{\"page\":\"1\",\"pageSize\":\"20\"}', '1', '1551282166.429');
+INSERT INTO `yy_admin_log` VALUES ('1118', '1', 'god', '127.0.0.1', '/api/system/consumer/list', '/api/system/consumer/list?page=1&pageSize=20', '', '{\"page\":\"1\",\"pageSize\":\"20\"}', '1', '1551282255.197');
+INSERT INTO `yy_admin_log` VALUES ('1119', '1', 'god', '127.0.0.1', '/api/get/path/info', '/api/get/path/info', '', '{\"path\":\"\\/system\\/consumer\"}', '1', '1551282257.500');
+INSERT INTO `yy_admin_log` VALUES ('1120', '1', 'god', '127.0.0.1', '/api/system/consumer/list', '/api/system/consumer/list?page=1&pageSize=20', '', '{\"page\":\"1\",\"pageSize\":\"20\"}', '1', '1551282257.504');
+INSERT INTO `yy_admin_log` VALUES ('1121', '1', 'god', '127.0.0.1', '/api/system/consumer/list', '/api/system/consumer/list?page=1&pageSize=20', '', '{\"page\":\"1\",\"pageSize\":\"20\"}', '1', '1551282310.109');
+INSERT INTO `yy_admin_log` VALUES ('1122', '1', 'god', '127.0.0.1', '/api/system/rule/list', '/api/system/rule/list', '', '[]', '1', '1551282310.170');
+INSERT INTO `yy_admin_log` VALUES ('1123', '1', 'god', '127.0.0.1', '/api/get/path/info', '/api/get/path/info', '', '{\"path\":\"\\/system\\/rule\"}', '1', '1551282310.179');
+INSERT INTO `yy_admin_log` VALUES ('1124', '1', 'god', '127.0.0.1', '/api/system/rule/list', '/api/system/rule/list?menu=1&status=1', '', '{\"menu\":\"1\",\"status\":\"1\"}', '1', '1551282310.185');
+INSERT INTO `yy_admin_log` VALUES ('1125', '1', 'god', '127.0.0.1', '/api/system/rule/routes', '/api/system/rule/routes', '', '[]', '1', '1551282310.197');
+INSERT INTO `yy_admin_log` VALUES ('1126', '1', 'god', '127.0.0.1', '/api/system/rule/get', '/api/system/rule/get?id=24', '', '{\"id\":\"24\"}', '1', '1551282319.921');
+INSERT INTO `yy_admin_log` VALUES ('1127', '1', 'god', '127.0.0.1', '/api/get/path/info', '/api/get/path/info', '', '{\"path\":\"\\/system\\/21-4\"}', '1', '1551282329.488');
+INSERT INTO `yy_admin_log` VALUES ('1128', '1', 'god', '127.0.0.1', '/api/system/group/list', '/api/system/group/list', '', '[]', '1', '1551282329.516');
+INSERT INTO `yy_admin_log` VALUES ('1129', '1', 'god', '127.0.0.1', '/api/system/rule/list', '/api/system/rule/list?status=1', '', '{\"status\":\"1\"}', '1', '1551282329.523');
+INSERT INTO `yy_admin_log` VALUES ('1130', '1', 'god', '127.0.0.1', '/api/get/path/info', '/api/get/path/info', '', '{\"path\":\"\\/system\\/group\"}', '1', '1551282329.529');
+INSERT INTO `yy_admin_log` VALUES ('1131', '1', 'god', '127.0.0.1', '/api/system/rule/routes', '/api/system/rule/routes', '', '[]', '1', '1551282330.136');
+INSERT INTO `yy_admin_log` VALUES ('1132', '1', 'god', '127.0.0.1', '/api/system/rule/list', '/api/system/rule/list', '', '[]', '1', '1551282330.133');
+INSERT INTO `yy_admin_log` VALUES ('1133', '1', 'god', '127.0.0.1', '/api/system/rule/list', '/api/system/rule/list?menu=1&status=1', '', '{\"menu\":\"1\",\"status\":\"1\"}', '1', '1551282330.136');
+INSERT INTO `yy_admin_log` VALUES ('1134', '1', 'god', '127.0.0.1', '/api/get/path/info', '/api/get/path/info', '', '{\"path\":\"\\/system\\/rule\"}', '1', '1551282330.139');
+INSERT INTO `yy_admin_log` VALUES ('1135', '1', 'god', '127.0.0.1', '/api/system/rule/save', '/api/system/rule/save', '', '{\"title\":\"\\u62e8\\u53f7\",\"name\":\"api\\/system\\/consumer\\/tel\",\"status\":true,\"menu\":\"0\",\"pid\":35}', '1', '1551282402.034');
+INSERT INTO `yy_admin_log` VALUES ('1136', '1', 'god', '127.0.0.1', '/api/system/rule/list', '/api/system/rule/list', '', '[]', '1', '1551282402.159');
+INSERT INTO `yy_admin_log` VALUES ('1137', '1', 'god', '127.0.0.1', '/api/system/rule/list', '/api/system/rule/list?menu=1&status=1', '', '{\"menu\":\"1\",\"status\":\"1\"}', '1', '1551282402.161');
+INSERT INTO `yy_admin_log` VALUES ('1138', '1', 'god', '127.0.0.1', '/api/system/group/list', '/api/system/group/list', '', '[]', '1', '1551282486.397');
+INSERT INTO `yy_admin_log` VALUES ('1139', '1', 'god', '127.0.0.1', '/api/system/rule/list', '/api/system/rule/list?status=1', '', '{\"status\":\"1\"}', '1', '1551282486.397');
+INSERT INTO `yy_admin_log` VALUES ('1140', '1', 'god', '127.0.0.1', '/api/get/path/info', '/api/get/path/info', '', '{\"path\":\"\\/system\\/group\"}', '1', '1551282486.412');
+INSERT INTO `yy_admin_log` VALUES ('1141', '1', 'god', '127.0.0.1', '/api/get/path/info', '/api/get/path/info', '', '{\"path\":\"\\/system\\/rule\"}', '1', '1551282488.829');
+INSERT INTO `yy_admin_log` VALUES ('1142', '1', 'god', '127.0.0.1', '/api/system/rule/routes', '/api/system/rule/routes', '', '[]', '1', '1551282488.832');
+INSERT INTO `yy_admin_log` VALUES ('1143', '1', 'god', '127.0.0.1', '/api/system/rule/list', '/api/system/rule/list?menu=1&status=1', '', '{\"menu\":\"1\",\"status\":\"1\"}', '1', '1551282488.840');
+INSERT INTO `yy_admin_log` VALUES ('1144', '1', 'god', '127.0.0.1', '/api/system/rule/list', '/api/system/rule/list', '', '[]', '1', '1551282488.889');
+INSERT INTO `yy_admin_log` VALUES ('1145', '1', 'god', '127.0.0.1', '/api/get/path/info', '/api/get/path/info', '', '{\"path\":\"\\/system\\/consumer\"}', '1', '1551282500.526');
+INSERT INTO `yy_admin_log` VALUES ('1146', '1', 'god', '127.0.0.1', '/api/system/consumer/list', '/api/system/consumer/list?page=1&pageSize=20', '', '{\"page\":\"1\",\"pageSize\":\"20\"}', '1', '1551282500.542');
+INSERT INTO `yy_admin_log` VALUES ('1147', '1', 'god', '127.0.0.1', '/api/system/consumer/list', '/api/system/consumer/list?page=1&pageSize=20', '', '{\"page\":\"1\",\"pageSize\":\"20\"}', '1', '1551282547.856');
+INSERT INTO `yy_admin_log` VALUES ('1148', '1', 'god', '127.0.0.1', '/api/get/path/info', '/api/get/path/info', '', '{\"path\":\"\\/system\\/consumer\"}', '1', '1551282553.635');
+INSERT INTO `yy_admin_log` VALUES ('1149', '1', 'god', '127.0.0.1', '/api/system/consumer/list', '/api/system/consumer/list?page=1&pageSize=20', '', '{\"page\":\"1\",\"pageSize\":\"20\"}', '1', '1551282553.636');
+INSERT INTO `yy_admin_log` VALUES ('1150', '1', 'god', '127.0.0.1', '/api/system/consumer/list', '/api/system/consumer/list?page=1&pageSize=20', '', '{\"page\":\"1\",\"pageSize\":\"20\"}', '1', '1551282562.293');
+INSERT INTO `yy_admin_log` VALUES ('1151', '1', 'god', '127.0.0.1', '/api/system/consumer/list', '/api/system/consumer/list?page=1&pageSize=20', '', '{\"page\":\"1\",\"pageSize\":\"20\"}', '1', '1551282644.951');
+INSERT INTO `yy_admin_log` VALUES ('1152', '1', 'god', '127.0.0.1', '/api/get/path/info', '/api/get/path/info', '', '{\"path\":\"\\/system\\/consumer\"}', '1', '1551282652.356');
+INSERT INTO `yy_admin_log` VALUES ('1153', '1', 'god', '127.0.0.1', '/api/system/consumer/list', '/api/system/consumer/list?page=1&pageSize=20', '', '{\"page\":\"1\",\"pageSize\":\"20\"}', '1', '1551282652.362');
+INSERT INTO `yy_admin_log` VALUES ('1154', '1', 'god', '127.0.0.1', '/api/get/path/info', '/api/get/path/info', '', '{\"path\":\"\\/system\\/consumer\"}', '1', '1551282697.317');
+INSERT INTO `yy_admin_log` VALUES ('1155', '1', 'god', '127.0.0.1', '/api/system/consumer/list', '/api/system/consumer/list?page=1&pageSize=20', '', '{\"page\":\"1\",\"pageSize\":\"20\"}', '1', '1551282697.320');
+INSERT INTO `yy_admin_log` VALUES ('1156', '1', 'god', '127.0.0.1', '/api/get/path/info', '/api/get/path/info', '', '{\"path\":\"\\/system\\/consumer\"}', '1', '1551282840.740');
+INSERT INTO `yy_admin_log` VALUES ('1157', '1', 'god', '127.0.0.1', '/api/system/consumer/list', '/api/system/consumer/list?page=1&pageSize=20', '', '{\"page\":\"1\",\"pageSize\":\"20\"}', '1', '1551282840.756');
+INSERT INTO `yy_admin_log` VALUES ('1158', '1', 'god', '127.0.0.1', '/api/system/consumer/tel', '/api/system/consumer/tel', '', '{\"id\":2,\"aid\":null,\"tag\":\"\\u54c8\\u54c8\",\"phone\":\"13222222222\",\"status\":1,\"state\":2,\"create_time\":\"2019-02-27 14:39:03\"}', '1', '1551282892.471');
+INSERT INTO `yy_admin_log` VALUES ('1159', '1', 'god', '127.0.0.1', '/api/system/consumer/tel', '/api/system/consumer/tel', '', '{\"id\":1,\"aid\":null,\"tag\":\"\\u6d4b\\u8bd5\",\"phone\":\"13111111111\",\"status\":2,\"state\":1,\"create_time\":\"2019-02-27 14:38:33\"}', '1', '1551282898.338');
+INSERT INTO `yy_admin_log` VALUES ('1160', '1', 'god', '127.0.0.1', '/api/system/consumer/tel', '/api/system/consumer/tel', '', '{\"id\":2,\"aid\":null,\"tag\":\"\\u54c8\\u54c8\",\"phone\":\"13222222222\",\"status\":1,\"state\":2,\"create_time\":\"2019-02-27 14:39:03\"}', '1', '1551283095.285');
+INSERT INTO `yy_admin_log` VALUES ('1161', '1', 'god', '127.0.0.1', '/api/system/consumer/tel', '/api/system/consumer/tel', '', '{\"id\":2,\"aid\":null,\"tag\":\"\\u54c8\\u54c8\",\"phone\":\"13222222222\",\"status\":1,\"state\":2,\"create_time\":\"2019-02-27 14:39:03\"}', '1', '1551283171.931');
+INSERT INTO `yy_admin_log` VALUES ('1162', '1', 'god', '127.0.0.1', '/api/system/consumer/tel', '/api/system/consumer/tel', '', '{\"id\":1,\"aid\":null,\"tag\":\"\\u6d4b\\u8bd5\",\"phone\":\"13111111111\",\"status\":2,\"state\":1,\"create_time\":\"2019-02-27 14:38:33\"}', '1', '1551283192.339');
+INSERT INTO `yy_admin_log` VALUES ('1163', '1', 'god', '127.0.0.1', '/api/system/consumer/tel', '/api/system/consumer/tel', '', '{\"id\":2,\"aid\":null,\"tag\":\"\\u54c8\\u54c8\",\"phone\":\"13222222222\",\"status\":1,\"state\":2,\"create_time\":\"2019-02-27 14:39:03\"}', '1', '1551283286.002');
+INSERT INTO `yy_admin_log` VALUES ('1164', '1', 'god', '127.0.0.1', '/api/system/consumer/tel', '/api/system/consumer/tel', '', '{\"id\":1,\"aid\":null,\"tag\":\"\\u6d4b\\u8bd5\",\"phone\":\"13111111111\",\"status\":2,\"state\":1,\"create_time\":\"2019-02-27 14:38:33\"}', '1', '1551283293.461');
+INSERT INTO `yy_admin_log` VALUES ('1165', '1', 'god', '127.0.0.1', '/api/system/consumer/tel', '/api/system/consumer/tel', '', '{\"id\":2,\"aid\":null,\"tag\":\"\\u54c8\\u54c8\",\"phone\":\"13222222222\",\"status\":1,\"state\":2,\"create_time\":\"2019-02-27 14:39:03\"}', '1', '1551283309.941');
+INSERT INTO `yy_admin_log` VALUES ('1166', '1', 'god', '127.0.0.1', '/api/system/consumer/tel', '/api/system/consumer/tel', '', '{\"id\":2,\"aid\":null,\"tag\":\"\\u54c8\\u54c8\",\"phone\":\"13222222222\",\"status\":1,\"state\":2,\"create_time\":\"2019-02-27 14:39:03\"}', '1', '1551283331.013');
+INSERT INTO `yy_admin_log` VALUES ('1167', '1', 'god', '127.0.0.1', '/api/system/consumer/tel', '/api/system/consumer/tel', '', '{\"id\":2,\"aid\":null,\"tag\":\"\\u54c8\\u54c8\",\"phone\":\"13222222222\",\"status\":1,\"state\":2,\"create_time\":\"2019-02-27 14:39:03\"}', '1', '1551283353.505');
+INSERT INTO `yy_admin_log` VALUES ('1168', '1', 'god', '127.0.0.1', '/api/system/consumer/list', '/api/system/consumer/list?page=1&pageSize=20', '', '{\"page\":\"1\",\"pageSize\":\"20\"}', '1', '1551283353.622');
+INSERT INTO `yy_admin_log` VALUES ('1169', '1', 'god', '127.0.0.1', '/api/system/consumer/tel', '/api/system/consumer/tel', '', '{\"id\":1,\"aid\":null,\"tag\":\"\\u6d4b\\u8bd5\",\"phone\":\"13111111111\",\"status\":2,\"state\":1,\"create_time\":\"2019-02-27 14:38:33\"}', '1', '1551283441.440');
+INSERT INTO `yy_admin_log` VALUES ('1170', '1', 'god', '127.0.0.1', '/api/system/consumer/list', '/api/system/consumer/list?page=1&pageSize=20', '', '{\"page\":\"1\",\"pageSize\":\"20\"}', '1', '1551283441.566');
+INSERT INTO `yy_admin_log` VALUES ('1171', '1', 'god', '127.0.0.1', '/api/system/consumer/list', '/api/system/consumer/list?page=1&pageSize=20', '', '{\"page\":\"1\",\"pageSize\":\"20\"}', '1', '1551283535.835');
+INSERT INTO `yy_admin_log` VALUES ('1172', '1', 'god', '127.0.0.1', '/api/get/path/info', '/api/get/path/info', '', '{\"path\":\"\\/\"}', '1', '1551445305.910');
+INSERT INTO `yy_admin_log` VALUES ('1173', '1', 'god', '127.0.0.1', '/api/get/path/info', '/api/get/path/info', '', '{\"path\":\"\\/system\\/admin\"}', '1', '1551445320.308');
+INSERT INTO `yy_admin_log` VALUES ('1174', '1', 'god', '127.0.0.1', '/api/system/admin/list', '/api/system/admin/list?page=1&pageSize=20', '', '{\"page\":\"1\",\"pageSize\":\"20\"}', '1', '1551445320.336');
+INSERT INTO `yy_admin_log` VALUES ('1175', '1', 'god', '127.0.0.1', '/api/system/group/list', '/api/system/group/list?status=1', '', '{\"status\":\"1\"}', '1', '1551445320.372');
+INSERT INTO `yy_admin_log` VALUES ('1176', '1', 'god', '127.0.0.1', '/api/system/admin/profile/get', '/api/system/admin/profile/get', '', '[]', '1', '1551446024.705');
+INSERT INTO `yy_admin_log` VALUES ('1177', '1', 'god', '127.0.0.1', '/api/get/path/info', '/api/get/path/info', '', '{\"path\":\"\\/system\\/profile\"}', '1', '1551446024.707');
+INSERT INTO `yy_admin_log` VALUES ('1178', '1', 'god', '127.0.0.1', '/api/system/admin/password/change', '/api/system/admin/password/change', '', '{\"old_password\":\"123456\",\"check_password\":\"123456\"}', '1', '1551446046.830');
+INSERT INTO `yy_admin_log` VALUES ('1179', '1', 'god', '127.0.0.1', '/api/get/path/info', '/api/get/path/info', '', '{\"path\":\"\\/system\\/profile\"}', '1', '1551453502.933');
+INSERT INTO `yy_admin_log` VALUES ('1180', '1', 'god', '127.0.0.1', '/api/system/admin/profile/get', '/api/system/admin/profile/get', '', '[]', '1', '1551453502.963');
+INSERT INTO `yy_admin_log` VALUES ('1181', '1', 'god', '127.0.0.1', '/api/get/path/info', '/api/get/path/info', '', '{\"path\":\"\\/system\\/21-3\"}', '1', '1551453510.435');
+INSERT INTO `yy_admin_log` VALUES ('1182', '1', 'god', '127.0.0.1', '/api/system/group/list', '/api/system/group/list?status=1', '', '{\"status\":\"1\"}', '1', '1551453510.474');
+INSERT INTO `yy_admin_log` VALUES ('1183', '1', 'god', '127.0.0.1', '/api/get/path/info', '/api/get/path/info', '', '{\"path\":\"\\/system\\/admin\"}', '1', '1551453510.475');
+INSERT INTO `yy_admin_log` VALUES ('1184', '1', 'god', '127.0.0.1', '/api/system/admin/list', '/api/system/admin/list?page=1&pageSize=20', '', '{\"page\":\"1\",\"pageSize\":\"20\"}', '1', '1551453510.477');
+INSERT INTO `yy_admin_log` VALUES ('1185', '1', 'god', '127.0.0.1', '/api/get/path/info', '/api/get/path/info', '', '{\"path\":\"\\/system\\/profile\"}', '1', '1551454461.512');
+INSERT INTO `yy_admin_log` VALUES ('1186', '1', 'god', '127.0.0.1', '/api/system/admin/profile/get', '/api/system/admin/profile/get', '', '[]', '1', '1551454461.516');
 
 -- ----------------------------
 -- Table structure for `yy_auth_admin`
@@ -805,13 +1247,14 @@ CREATE TABLE `yy_auth_admin` (
   `position` varchar(60) DEFAULT NULL COMMENT '职位',
   PRIMARY KEY (`id`),
   UNIQUE KEY `username` (`username`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COMMENT='运营后台用户列表';
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COMMENT='运营后台用户列表';
 
 -- ----------------------------
 -- Records of yy_auth_admin
 -- ----------------------------
-INSERT INTO `yy_auth_admin` VALUES ('1', 'god', '$2y$12$wNn2NqR0kIXdG4H0/WJrf.NfS8csPHGC1xUGO0KDTYe.zKlqkbxMy', 'SuperAdmin', '/storage/avatars/BUmMi7tUldj9A96F8aUbNktkFCxX8hwDSjjB9TjH.jpeg', '1588899999', 'yxxxx@qq.com', '3527594120810015', '', '1551197411.213', '127.0.0.1', '0', '1', '0.000', '开发工程师');
-INSERT INTO `yy_auth_admin` VALUES ('2', 'test', '$2y$12$23bjKmox2SuRsEQQxp4YcOGx.3nHo6vEvX2yjBYTNs84buy8.I42O', '测试号', '/storage/avatars/xL35yynYjcCmQdhGDqjqwEnwPGFASjGCp35RNbBE.jpeg', null, null, '', '', '1542794629.706', '192.168.126.1', '0', '1', '1541734248.958', null);
+INSERT INTO `yy_auth_admin` VALUES ('1', 'god', '$2y$12$2.N0C6bHB6TBwv88cJSMeeuRQU70kFFncJm3xi/YJ2p1EqxwXPxWK', 'SuperAdmin', '/storage/avatars/BUmMi7tUldj9A96F8aUbNktkFCxX8hwDSjjB9TjH.jpeg', '1588899999', 'yxxxx@qq.com', '3527594120810015', '', '1551453502.498', '127.0.0.1', '0', '1', '0.000', '开发工程师');
+INSERT INTO `yy_auth_admin` VALUES ('2', 'test', '$2y$12$23bjKmox2SuRsEQQxp4YcOGx.3nHo6vEvX2yjBYTNs84buy8.I42O', '测试号', '/storage/avatars/xL35yynYjcCmQdhGDqjqwEnwPGFASjGCp35RNbBE.jpeg', null, null, '', '', '1551280287.038', '127.0.0.1', '0', '1', '1541734248.958', null);
+INSERT INTO `yy_auth_admin` VALUES ('6', '13111111111', '$2y$12$qjLVxyd919VudYR3OTBXXO/sQtmO643FjYOdJo76WXvqdEYfLZSg6', '', '', '', '123@qq.com', '', '', '1551454795.578', '127.0.0.1', '0', '1', '1551454795.358', null);
 
 -- ----------------------------
 -- Table structure for `yy_auth_group`
@@ -828,8 +1271,8 @@ CREATE TABLE `yy_auth_group` (
 -- ----------------------------
 -- Records of yy_auth_group
 -- ----------------------------
-INSERT INTO `yy_auth_group` VALUES ('1', '上帝组', '1,2,3,4,5,6', '1');
-INSERT INTO `yy_auth_group` VALUES ('2', '高级管理员', '1,21,2,16,17,18,19,3,13,15,4,7,8,5,9,10,11,12', '1');
+INSERT INTO `yy_auth_group` VALUES ('1', '上帝组', '1,2,3,4,5,6,35,37', '1');
+INSERT INTO `yy_auth_group` VALUES ('2', '高级管理员', '29,34,35,36,1,21,2,16,17,18,19,3,13,15,4,7,8,5,9,10,11,12', '1');
 
 -- ----------------------------
 -- Table structure for `yy_auth_group_access`
@@ -869,7 +1312,7 @@ CREATE TABLE `yy_auth_rule` (
   `deleted` tinyint(1) DEFAULT '0' COMMENT '是否删除',
   PRIMARY KEY (`id`),
   UNIQUE KEY `name` (`name`)
-) ENGINE=InnoDB AUTO_INCREMENT=35 DEFAULT CHARSET=utf8mb4 COMMENT='权限点和菜单列表';
+) ENGINE=InnoDB AUTO_INCREMENT=38 DEFAULT CHARSET=utf8mb4 COMMENT='权限点和菜单列表';
 
 -- ----------------------------
 -- Records of yy_auth_rule
@@ -907,4 +1350,44 @@ INSERT INTO `yy_auth_rule` VALUES ('30', '/price', '资金模块', '1', '1', '1'
 INSERT INTO `yy_auth_rule` VALUES ('31', '/files', '文件管理', '1', '1', '1', null, '0', null, '<i class=\"fa fa-file-excel-o\"></i>', '6', '0');
 INSERT INTO `yy_auth_rule` VALUES ('32', '/files/manage', '文件管理', '1', '1', '1', '', '31', null, '<i class=\"fa fa-file-excel-o\"></i>', '1', '0');
 INSERT INTO `yy_auth_rule` VALUES ('33', '/price/manage', '资金管理', '1', '1', '1', '', '30', null, '<i class=\"fa fa-leaf\"></i>', '1', '0');
-INSERT INTO `yy_auth_rule` VALUES ('34', '/user/manage', '客户管理', '1', '1', '1', '', '29', null, '<i class=\"fa fa-users\"></i>', '1', '0');
+INSERT INTO `yy_auth_rule` VALUES ('34', '/system/consumermanage', '客户管理', '1', '1', '1', null, '29', null, '<i class=\"fa fa-users\"></i>', '1', '0');
+INSERT INTO `yy_auth_rule` VALUES ('35', '/system/consumer', '客户公海', '1', '1', '1', null, '34', null, null, '1', '0');
+INSERT INTO `yy_auth_rule` VALUES ('36', 'api/system/consumer/list', '客户列表', '1', '1', '0', null, '35', null, null, null, '0');
+INSERT INTO `yy_auth_rule` VALUES ('37', 'api/system/consumer/tel', '拨号', '1', '1', '0', '', '35', null, '', null, '0');
+
+-- ----------------------------
+-- Table structure for `yy_code`
+-- ----------------------------
+DROP TABLE IF EXISTS `yy_code`;
+CREATE TABLE `yy_code` (
+  `id` varchar(32) NOT NULL COMMENT '手机号',
+  `code` varchar(16) NOT NULL COMMENT '验证码',
+  `try_time` tinyint(2) unsigned NOT NULL DEFAULT '0' COMMENT '验证码尝试次数',
+  `create_time` decimal(16,3) unsigned NOT NULL DEFAULT '0.000' COMMENT '数据插入时间',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='短信验证码';
+
+-- ----------------------------
+-- Records of yy_code
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for `yy_consumer`
+-- ----------------------------
+DROP TABLE IF EXISTS `yy_consumer`;
+CREATE TABLE `yy_consumer` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `aid` int(11) DEFAULT NULL COMMENT '商户id',
+  `tag` varchar(128) DEFAULT NULL,
+  `phone` varchar(32) DEFAULT NULL COMMENT '电话',
+  `status` tinyint(1) DEFAULT '0' COMMENT '状态',
+  `state` tinyint(1) DEFAULT '0' COMMENT '跟进状态',
+  `create_time` decimal(16,3) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4;
+
+-- ----------------------------
+-- Records of yy_consumer
+-- ----------------------------
+INSERT INTO `yy_consumer` VALUES ('1', null, '测试', '13111111111', '2', '1', '1551278313.836');
+INSERT INTO `yy_consumer` VALUES ('2', null, '哈哈', '13222222222', '1', '2', '1551278343.836');
